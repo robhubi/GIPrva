@@ -8,8 +8,8 @@ See: [GIPrva.pdf](p_GIPrva_V0.pdf)
 
 ## Install project
 
-In Visual Studio start window: "Clone a repository" 
-Git repository URL: https://github.com/robhubi/GIPrva.git
+In Visual Studio start window: "Clone a repository" <br/>
+Git repository URL: https://github.com/robhubi/GIPrva.git <br/>
 Solution File: "Import GIP RVA.sln"
 
 ## Customise the project
