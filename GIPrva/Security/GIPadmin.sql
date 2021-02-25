@@ -1,0 +1,2 @@
+﻿CREATE USER [GIPadmin] FOR LOGIN [GIPadmin];
+

@@ -1,0 +1,1032 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/28/2019 10:16:59 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ROBERT-PC03"
+  DTS:CreatorName="ROBERT-PC03\Robert"
+  DTS:DTSID="{B423E731-3189-4B80-8A03-71D595811203}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1900.80"
+  DTS:LocaleID="1031"
+  DTS:ObjectName="SSIS_Node"
+  DTS:PackageType="5"
+  DTS:ProtectionLevel="2"
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{9857ED1C-EDC2-4B64-943A-B4C291F9B6BD}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FFcoMngr_Node]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F0EC8D2B-915E-4A8A-992E-1B691C17F42B}"
+      DTS:ObjectName="FFcoMngr_Node">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowsToSkip="4"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="T:\Robert\Maps\GIP\Node.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{469AB84D-B1C9-4BA8-A1DC-8EA16A975EBB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="NODE_ID"
+              DTS:DTSID="{63EF7DCC-2588-4EF3-9EDD-2B119F1B524D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 2"
+              DTS:DTSID="{5D27FB00-E584-4A42-A4BC-F8CC82ED26A0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 3"
+              DTS:DTSID="{A9E5A391-C00F-4A6A-ACB7-C67FDF8E701A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="X"
+              DTS:DTSID="{26DE83B4-9F8D-4C20-8EEB-B62D3B91DE9E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Y"
+              DTS:DTSID="{A3DA0C41-26D6-463D-B3F6-B52CAE12BD77}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Z"
+              DTS:DTSID="{37F55046-0726-419D-84D8-140295017363}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 7"
+              DTS:DTSID="{C8C58056-974B-4486-AAEC-4279A808951A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 8"
+              DTS:DTSID="{0E2F6F54-E54B-4D29-80F5-6DA86EFAC060}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 9"
+              DTS:DTSID="{7C527AFD-7263-43F7-AA68-EEDD7DFC7ADF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 10"
+              DTS:DTSID="{63A2A54B-409F-49A1-8A5C-DEC175923D10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 11"
+              DTS:DTSID="{50110FC4-F5FD-402F-A90F-C9F763024C10}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 12"
+              DTS:DTSID="{04CFD6C8-54A3-4655-BC3A-8B97F58865AD}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Import_Node_Data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Datenflusstask"
+      DTS:DTSID="{0A8AC206-068E-408F-BE4D-2ADF1C90686A}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import_Node_Data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Import_Node_Data\Quelle_Node_txt"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flatfilequelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Flatfilequelle"
+              localeId="1033"
+              name="Quelle_Node_txt"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Gibt an, ob Spalten mit der Länge &quot;0&quot; als NULL behandelt werden."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen der Ausgabespalte an, die den Dateinamen enthält. Wenn kein Name angegeben wird, wird keine Ausgabespalte generiert, die den Dateinamen enthält."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import_Node_Data\Quelle_Node_txt.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[FFcoMngr_Node]"
+                  connectionManagerRefId="Package.ConnectionManagers[FFcoMngr_Node]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle]"
+                  name="Ausgabe der Flatfilequelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[NODE_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[NODE_ID]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[NODE_ID]"
+                      name="NODE_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[X]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[X]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[X]"
+                      name="X"
+                      scale="7"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[Y]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Y]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[Y]"
+                      name="Y"
+                      scale="7"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[Z]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Z]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[Z]"
+                      name="Z"
+                      scale="2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 0]"
+                      codePage="65001"
+                      dataType="str"
+                      length="3"
+                      name="Column 0" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[NODE_ID]"
+                      dataType="i4"
+                      name="NODE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 2]"
+                      dataType="r4"
+                      name="Column 2" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 3]"
+                      dataType="i1"
+                      name="Column 3" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[X]"
+                      dataType="decimal"
+                      name="X" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Y]"
+                      dataType="decimal"
+                      name="Y" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Z]"
+                      dataType="decimal"
+                      name="Z" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 7]"
+                      dataType="i1"
+                      name="Column 7" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 8]"
+                      dataType="r4"
+                      name="Column 8" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 9]"
+                      dataType="i1"
+                      name="Column 9" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 10]"
+                      codePage="65001"
+                      dataType="str"
+                      length="1"
+                      name="Column 10" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 11]"
+                      dataType="i8"
+                      name="Column 11" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 12]"
+                      dataType="i1"
+                      name="Column 12" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Fehlerausgabe der Flatfilequelle]"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der Flatfilequelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[Fehlerausgabespalte der Flatfilequelle]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Fehlerausgabespalte der Flatfilequelle"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[Fehlerausgabespalte der Flatfilequelle]"
+                      name="Fehlerausgabespalte der Flatfilequelle" />
+                    <outputColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import_Node_Data\Ziel_Node Bulk Insert"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
+              description="OLE DB-Ziel"
+              name="Ziel_Node Bulk Insert"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[Node]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadMaxInsertCommitSize">10000</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Connections[OleDbConnection]"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels]"
+                  errorOrTruncationOperation="Einfügen"
+                  errorRowDisposition="RedirectRow"
+                  hasSideEffects="true"
+                  name="Eingabe des OLE DB-Ziels">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[NODE_ID]"
+                      cachedDataType="i4"
+                      cachedName="NODE_ID"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[NODE_ID]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[NODE_ID]" />
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[X]"
+                      cachedDataType="decimal"
+                      cachedName="X"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[X]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[X]" />
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[Y]"
+                      cachedDataType="decimal"
+                      cachedName="Y"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Y]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[Y]" />
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[Z]"
+                      cachedDataType="decimal"
+                      cachedName="Z"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Z]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[Z]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[NODE_ID]"
+                      dataType="i4"
+                      name="NODE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[X]"
+                      dataType="numeric"
+                      name="X"
+                      precision="9"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Y]"
+                      dataType="numeric"
+                      name="Y"
+                      precision="9"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Z]"
+                      dataType="numeric"
+                      name="Z"
+                      precision="10"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Ziels"
+                  synchronousInputId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
+              description="OLE DB-Ziel"
+              name="Ziel_Node Row by Row Insert"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[Node]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadMaxInsertCommitSize">10000</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Connections[OleDbConnection]"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels]"
+                  errorOrTruncationOperation="Einfügen"
+                  errorRowDisposition="RedirectRow"
+                  hasSideEffects="true"
+                  name="Eingabe des OLE DB-Ziels">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[NODE_ID]"
+                      cachedDataType="i4"
+                      cachedName="NODE_ID"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[NODE_ID]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[NODE_ID]" />
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[X]"
+                      cachedDataType="decimal"
+                      cachedName="X"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[X]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[X]" />
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[Y]"
+                      cachedDataType="decimal"
+                      cachedName="Y"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Y]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[Y]" />
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[Z]"
+                      cachedDataType="decimal"
+                      cachedName="Z"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Z]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[Z]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[NODE_ID]"
+                      dataType="i4"
+                      name="NODE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[X]"
+                      dataType="numeric"
+                      name="X"
+                      precision="9"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Y]"
+                      dataType="numeric"
+                      name="Y"
+                      precision="9"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Z]"
+                      dataType="numeric"
+                      name="Z"
+                      precision="10"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Ziels"
+                  synchronousInputId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import_Node_Data\Ziel_Node Write to Error Table"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
+              description="OLE DB-Ziel"
+              name="Ziel_Node Write to Error Table"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[Node_ImpError]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadMaxInsertCommitSize">10000</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Connections[OleDbConnection]"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels]"
+                  errorOrTruncationOperation="Einfügen"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Eingabe des OLE DB-Ziels">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[NODE_ID]"
+                      cachedDataType="i4"
+                      cachedName="NODE_ID"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[NODE_ID]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[NODE_ID]" />
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[X]"
+                      cachedDataType="decimal"
+                      cachedName="X"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[X]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[X]" />
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[Y]"
+                      cachedDataType="decimal"
+                      cachedName="Y"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Y]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[Y]" />
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[Z]"
+                      cachedDataType="decimal"
+                      cachedName="Z"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Z]"
+                      lineageId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle].Columns[Z]" />
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[NODE_ID]"
+                      dataType="i4"
+                      name="NODE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[X]"
+                      dataType="numeric"
+                      name="X"
+                      precision="9"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Y]"
+                      dataType="numeric"
+                      name="Y"
+                      precision="9"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[Z]"
+                      dataType="numeric"
+                      name="Z"
+                      precision="10"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Ziels"
+                  synchronousInputId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import_Node_Data.Paths[Ausgabe der Flatfilequelle]"
+              endId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Inputs[Eingabe des OLE DB-Ziels]"
+              name="Ausgabe der Flatfilequelle"
+              startId="Package\Import_Node_Data\Quelle_Node_txt.Outputs[Ausgabe der Flatfilequelle]" />
+            <path
+              refId="Package\Import_Node_Data.Paths[Fehlerausgabe des OLE DB-Ziels]"
+              endId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels]"
+              name="Fehlerausgabe des OLE DB-Ziels"
+              startId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]" />
+            <path
+              refId="Package\Import_Node_Data.Paths[Fehlerausgabe des OLE DB-Ziels1]"
+              endId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Inputs[Eingabe des OLE DB-Ziels]"
+              name="Fehlerausgabe des OLE DB-Ziels"
+              startId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Import_Node_Data"
+          TopLeft="78,79" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import_Node_Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="221,42"
+          Id="Package\Import_Node_Data\Ziel_Node Row by Row Insert"
+          TopLeft="382,188" />
+        <NodeLayout
+          Size="159,42"
+          Id="Package\Import_Node_Data\Quelle_Node_txt"
+          TopLeft="62,51" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Import_Node_Data\Ziel_Node Bulk Insert"
+          TopLeft="53,149" />
+        <NodeLayout
+          Size="225,42"
+          Id="Package\Import_Node_Data\Ziel_Node Write to Error Table"
+          TopLeft="382,279" />
+        <EdgeLayout
+          Id="Package\Import_Node_Data.Paths[Fehlerausgabe des OLE DB-Ziels1]"
+          TopLeft="493.5,230">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,49"
+              Start="0,0"
+              End="0,41.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-71.817578125,14.91845703125,143.63515625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import_Node_Data.Paths[Fehlerausgabe des OLE DB-Ziels]"
+          TopLeft="235,170">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="147,39"
+              Start="0,0"
+              End="139.5,39">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="69.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="69.5,0"
+                    Point2="73.5,0"
+                    Point3="73.5,4" />
+                  <mssgle:LineSegment
+                    End="73.5,35" />
+                  <mssgle:CubicBezierSegment
+                    Point1="73.5,35"
+                    Point2="73.5,39"
+                    Point3="77.5,39" />
+                  <mssgle:LineSegment
+                    End="139.5,39" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="1.68242187500002,-17.6630859375,143.63515625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import_Node_Data.Paths[Ausgabe der Flatfilequelle]"
+          TopLeft="142.75,93">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,56"
+              Start="0,0"
+              End="0,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import_Node_Data\Ziel_Node Row by Row Insert">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import_Node_Data\Ziel_Node Bulk Insert">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import_Node_Data\Ziel_Node Write to Error Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

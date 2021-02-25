@@ -1,0 +1,1670 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/13/2019 10:40:36 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ROBERT-PC03"
+  DTS:CreatorName="ROBERT-PC03\Robert"
+  DTS:Description="DTS Wizard-generated package"
+  DTS:DTSID="{5A36388F-D3D4-4006-A828-9232AE28C3AC}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1900.80"
+  DTS:LocaleID="1031"
+  DTS:MaxErrorCount="0"
+  DTS:ObjectName="SSIS_Link"
+  DTS:ProtectionLevel="2"
+  DTS:VersionBuild="19"
+  DTS:VersionGUID="{A7A7FAAC-76BC-47EA-A2B0-49507A561BD7}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B1E59D60-591A-4C0A-8E01-B784800B3EC8}"
+      DTS:ObjectName="DestinationConnectionOLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=TummiSS;User ID=GIPadmin;Initial Catalog=GIPrva;Provider=SQLNCLI11;Auto Translate=false;">
+          <EncryptedData
+            Type="http://www.w3.org/2001/04/xmlenc#Element"
+            Salt="vy1cqH6zbg=="
+            IV="aZZrc/Q8kcg=" xmlns="http://www.w3.org/2001/04/xmlenc#">
+            <EncryptionMethod
+              Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+            <CipherData>
+              <CipherValue>aZZrc/Q8kcgqif4lo/AcNhsaM2hfAhnDMNBsbfgYhVQNauvIqyDfyhE05PO0Exye/Og/d3aEBZiJnjsTmHboNIXniA3sW6LYxvfv6o62vso5tEIIh5bTUWUK5RphBBhYAsvHw46mS98UQM8q5IotUMAKr2dVK28J7XDoSEvOZN0=</CipherValue>
+            </CipherData>
+          </EncryptedData>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SourceConnectionFlatFile]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6E944BC7-7DF3-4EDE-9C02-E30F8D414895}"
+      DTS:ObjectName="SourceConnectionFlatFile">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1031"
+          DTS:HeaderRowsToSkip="4"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="T:\Robert\Maps\GIP\Link.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 0"
+              DTS:DTSID="{C75C9F52-F385-4FF6-B704-8C9165A765BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LINK_ID"
+              DTS:DTSID="{B15E8EF0-A9D8-4CD0-8C12-8FEEF662784D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 2"
+              DTS:DTSID="{60FE96CB-2EC5-43E6-8ACD-7F99567AF6D5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 3"
+              DTS:DTSID="{2925CCA5-61C9-4B94-B685-59B97C02BCFD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FROM_NODE"
+              DTS:DTSID="{B0543D84-2997-44AE-9E2E-0E8C8A70A5FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TO_NODE"
+              DTS:DTSID="{36420FB3-4B0B-4F10-912D-025A5FCFE5CF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 6"
+              DTS:DTSID="{D76305C2-4B63-40CD-9B4E-B84C055E7D92}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 7"
+              DTS:DTSID="{727F334B-2789-48FF-B48C-F24428B9B282}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 8"
+              DTS:DTSID="{9024A291-7883-4633-B336-82855BE6FF41}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 9"
+              DTS:DTSID="{C2807725-9836-4F20-AEEC-869A6E3A5559}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 10"
+              DTS:DTSID="{A62D0810-E33F-4845-83F4-77227BDD7EAB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 11"
+              DTS:DTSID="{FF99F0DC-D279-45EA-80C5-02C8EC97CE26}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 12"
+              DTS:DTSID="{DD605364-C03D-4591-A9B2-5DE295AD6BFB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 13"
+              DTS:DTSID="{77E3693B-A4D3-4472-9B3F-5B13DB6B513B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ACCESS_TOW"
+              DTS:DTSID="{79FFD391-C6A5-47D6-A31E-3B1845E92763}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ACCESS_BKW"
+              DTS:DTSID="{06277258-52C2-4E1C-A62F-F5A2BA86ED3C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 16"
+              DTS:DTSID="{445024E6-188B-4044-A345-82CD4E465BAC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 17"
+              DTS:DTSID="{5823BFC2-C863-47CE-A357-84FB7B6C7FC7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 18"
+              DTS:DTSID="{7CBD0BBA-5C98-4A44-B835-95A687C9C2D8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 19"
+              DTS:DTSID="{8B14F338-C2F3-40BE-B3A4-B09F35B6BAD9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 20"
+              DTS:DTSID="{60F64E9C-1D52-4D22-BBCA-3B487C7BF0ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 21"
+              DTS:DTSID="{8B28FEEE-7357-4CAD-A9A7-70D8307106B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 22"
+              DTS:DTSID="{93FAF618-A1D8-425B-B7F7-EABE98EAC2B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 23"
+              DTS:DTSID="{BDAD3A1E-B1D3-4FA4-B255-144316E19D44}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 24"
+              DTS:DTSID="{CAFEAB08-F714-41EA-8B49-B549710F8DC0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 25"
+              DTS:DTSID="{D4A4B6E9-B937-406D-8808-8CB1D87A4538}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 26"
+              DTS:DTSID="{2E6400E2-A93F-4C30-B100-0F574173F47A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 27"
+              DTS:DTSID="{9E9DFEF9-6E7C-4291-A16F-F3A317E05B27}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 28"
+              DTS:DTSID="{7965B0D8-B6FE-404B-B2A3-DA1E4BA9B0FF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 29"
+              DTS:DTSID="{6285B636-EC6A-4DE5-9C7F-C92F8EE02721}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 30"
+              DTS:DTSID="{FD06E453-814F-412F-B158-031B537A75B7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 31"
+              DTS:DTSID="{8DB1719B-ABD0-4F06-A2C9-73565AC484E6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 32"
+              DTS:DTSID="{101B66AC-A3BD-460A-9C26-665EF3789E9C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 33"
+              DTS:DTSID="{6E1B44BA-8F35-4A16-B789-3481CAFD0213}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 34"
+              DTS:DTSID="{84A0B872-7E0C-43F3-8085-7377549A296E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 35"
+              DTS:DTSID="{A873A199-9FA0-431D-850D-1361384F04A2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 36"
+              DTS:DTSID="{F8B7CFE9-7B31-41BA-82E4-97C1F3AE2779}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 37"
+              DTS:DTSID="{D1CA6965-4CDA-4129-82AA-1603AC7070CA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 38"
+              DTS:DTSID="{1F59A69E-512B-4D53-BDDC-3A95AF89D37B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 39"
+              DTS:DTSID="{EDC0C96D-3FB6-4A87-8475-83E322126838}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 40"
+              DTS:DTSID="{0114F16A-4D64-4D06-91F2-50A90B76FBA4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 41"
+              DTS:DTSID="{DE62FF16-F633-4B5A-8DDF-1BD28963095B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 42"
+              DTS:DTSID="{0248BBBC-5C69-42CF-8568-F33D7D23E2A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 43"
+              DTS:DTSID="{4C1DBDEF-98B1-471A-8325-13A078172445}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 44"
+              DTS:DTSID="{C1F19363-9A72-40C4-96BC-4A3B99797BF9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 45"
+              DTS:DTSID="{4CC391EB-EB73-4ACA-BE8F-63ADBE47332E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 46"
+              DTS:DTSID="{AAAEE934-18F4-4EE5-97A0-0AC430E872C0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 47"
+              DTS:DTSID="{338DD8E9-48B0-433B-9462-A0A758E8B235}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 48"
+              DTS:DTSID="{C79C2D4B-B2E4-4B55-B225-E1F2BF8FD84C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Spalte 49"
+              DTS:DTSID="{7007F4B3-92A3-4986-A1CE-0B051A596BBE}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Import Link Data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DTSID="{1247A829-54BE-49E9-B231-ABCF8BE1A6A6}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import Link Data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          defaultBufferSize="3145728"
+          version="1">
+          <components>
+            <component
+              refId="Package\Import Link Data\Quelle - Link_txt"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flatfilequelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Flatfilequelle"
+              localeId="1031"
+              name="Quelle - Link_txt"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Gibt an, ob Spalten mit der Länge &quot;0&quot; als NULL behandelt werden."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen der Ausgabespalte an, die den Dateinamen enthält. Wenn kein Name angegeben wird, wird keine Ausgabespalte generiert, die den Dateinamen enthält."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Link Data\Quelle - Link_txt.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[SourceConnectionFlatFile]"
+                  connectionManagerRefId="Package.ConnectionManagers[SourceConnectionFlatFile]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle]"
+                  name="Ausgabe der Flatfilequelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[LINK_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[LINK_ID]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[LINK_ID]"
+                      name="LINK_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[FROM_NODE]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[FROM_NODE]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[FROM_NODE]"
+                      name="FROM_NODE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[TO_NODE]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[TO_NODE]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[TO_NODE]"
+                      name="TO_NODE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[ACCESS_TOW]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[ACCESS_TOW]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[ACCESS_TOW]"
+                      name="ACCESS_TOW"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[ACCESS_BKW]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[ACCESS_BKW]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[ACCESS_BKW]"
+                      name="ACCESS_BKW"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 0]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 0" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[LINK_ID]"
+                      dataType="i4"
+                      name="LINK_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 2]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 2" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 3]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 3" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[FROM_NODE]"
+                      dataType="i4"
+                      name="FROM_NODE" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[TO_NODE]"
+                      dataType="i4"
+                      name="TO_NODE" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 6]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 6" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 7]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 7" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 8]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 8" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 9]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 9" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 10]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 10" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 11]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 11" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 12]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 12" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 13]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 13" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[ACCESS_TOW]"
+                      dataType="i4"
+                      name="ACCESS_TOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[ACCESS_BKW]"
+                      dataType="i4"
+                      name="ACCESS_BKW" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 16]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 16" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 17]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 17" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 18]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 18" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 19]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 19" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 20]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 20" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 21]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 21" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 22]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 22" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 23]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 23" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 24]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 24" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 25]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 25" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 26]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 26" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 27]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 27" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 28]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 28" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 29]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 29" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 30]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 30" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 31]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 31" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 32]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 32" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 33]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 33" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 34]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 34" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 35]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 35" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 36]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 36" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 37]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 37" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 38]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 38" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 39]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 39" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 40]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 40" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 41]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 41" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 42]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 42" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 43]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 43" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 44]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 44" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 45]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 45" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 46]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 46" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 47]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 47" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 48]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 48" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Spalte 49]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Spalte 49" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Fehlerausgabe der Flatfilequelle]"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der Flatfilequelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[Fehlerausgabespalte der Flatfilequelle]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Fehlerausgabespalte der Flatfilequelle"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[Fehlerausgabespalte der Flatfilequelle]"
+                      name="Fehlerausgabespalte der Flatfilequelle" />
+                    <outputColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Link Data\Quelle - Link_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Link Data\Ziel - Link Bulk Insert"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
+              description="OLE DB-Ziel"
+              name="Ziel - Link Bulk Insert"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[Link]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadMaxInsertCommitSize">10000</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Link Data\Ziel - Link Bulk Insert.Connections[OleDbConnection]"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input]"
+                  errorOrTruncationOperation="Einfügen"
+                  errorRowDisposition="RedirectRow"
+                  hasSideEffects="true"
+                  name="Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].Columns[LINK_ID]"
+                      cachedDataType="i4"
+                      cachedName="LINK_ID"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].ExternalColumns[LINK_ID]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[LINK_ID]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].Columns[FROM_NODE]"
+                      cachedDataType="i4"
+                      cachedName="FROM_NODE"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].ExternalColumns[FROM_NODE]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[FROM_NODE]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].Columns[TO_NODE]"
+                      cachedDataType="i4"
+                      cachedName="TO_NODE"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].ExternalColumns[TO_NODE]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[TO_NODE]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].Columns[ACCESS_TOW]"
+                      cachedDataType="i4"
+                      cachedName="ACCESS_TOW"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].ExternalColumns[ACCESS_TOW]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[ACCESS_TOW]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].Columns[ACCESS_BKW]"
+                      cachedDataType="i4"
+                      cachedName="ACCESS_BKW"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].ExternalColumns[ACCESS_BKW]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[ACCESS_BKW]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].ExternalColumns[LINK_ID]"
+                      dataType="i4"
+                      name="LINK_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].ExternalColumns[FROM_NODE]"
+                      dataType="i4"
+                      name="FROM_NODE" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].ExternalColumns[TO_NODE]"
+                      dataType="i4"
+                      name="TO_NODE" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].ExternalColumns[ACCESS_TOW]"
+                      dataType="i4"
+                      name="ACCESS_TOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].ExternalColumns[ACCESS_BKW]"
+                      dataType="i4"
+                      name="ACCESS_BKW" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].ExternalColumns[cLONx100]"
+                      dataType="i4"
+                      name="cLONx100" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].ExternalColumns[cLATx100]"
+                      dataType="i4"
+                      name="cLATx100" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input].ExternalColumns[LINE_GEO]"
+                      dataType="image"
+                      name="LINE_GEO" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Link Data\Ziel - Link Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Ziels"
+                  synchronousInputId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Link Data\Ziel - Link Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Link Data\Ziel - Link Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Link Data\Ziel - Link Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Link Data\Ziel - Link Row by Row Insert"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
+              description="OLE DB-Ziel"
+              name="Ziel - Link Row by Row Insert"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[Link]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadMaxInsertCommitSize">1</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Connections[OleDbConnection]"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input]"
+                  errorOrTruncationOperation="Einfügen"
+                  errorRowDisposition="RedirectRow"
+                  hasSideEffects="true"
+                  name="Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].Columns[LINK_ID]"
+                      cachedDataType="i4"
+                      cachedName="LINK_ID"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].ExternalColumns[LINK_ID]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[LINK_ID]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].Columns[FROM_NODE]"
+                      cachedDataType="i4"
+                      cachedName="FROM_NODE"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].ExternalColumns[FROM_NODE]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[FROM_NODE]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].Columns[TO_NODE]"
+                      cachedDataType="i4"
+                      cachedName="TO_NODE"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].ExternalColumns[TO_NODE]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[TO_NODE]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].Columns[ACCESS_TOW]"
+                      cachedDataType="i4"
+                      cachedName="ACCESS_TOW"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].ExternalColumns[ACCESS_TOW]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[ACCESS_TOW]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].Columns[ACCESS_BKW]"
+                      cachedDataType="i4"
+                      cachedName="ACCESS_BKW"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].ExternalColumns[ACCESS_BKW]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[ACCESS_BKW]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].ExternalColumns[LINK_ID]"
+                      dataType="i4"
+                      name="LINK_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].ExternalColumns[FROM_NODE]"
+                      dataType="i4"
+                      name="FROM_NODE" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].ExternalColumns[TO_NODE]"
+                      dataType="i4"
+                      name="TO_NODE" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].ExternalColumns[ACCESS_TOW]"
+                      dataType="i4"
+                      name="ACCESS_TOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].ExternalColumns[ACCESS_BKW]"
+                      dataType="i4"
+                      name="ACCESS_BKW" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].ExternalColumns[cLONx100]"
+                      dataType="i4"
+                      name="cLONx100" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].ExternalColumns[cLATx100]"
+                      dataType="i4"
+                      name="cLATx100" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input].ExternalColumns[LINE_GEO]"
+                      dataType="image"
+                      name="LINE_GEO" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Ziels"
+                  synchronousInputId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Link Data\Ziel - Link Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Link Data\Ziel - Link Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
+              description="OLE DB-Ziel"
+              name="Ziel - Link_ImpError write to Error Table"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[Link_ImpError]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadMaxInsertCommitSize">1</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Connections[OleDbConnection]"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input]"
+                  errorOrTruncationOperation="Einfügen"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].Columns[LINK_ID]"
+                      cachedDataType="i4"
+                      cachedName="LINK_ID"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[LINK_ID]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[LINK_ID]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].Columns[FROM_NODE]"
+                      cachedDataType="i4"
+                      cachedName="FROM_NODE"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[FROM_NODE]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[FROM_NODE]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].Columns[TO_NODE]"
+                      cachedDataType="i4"
+                      cachedName="TO_NODE"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[TO_NODE]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[TO_NODE]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].Columns[ACCESS_TOW]"
+                      cachedDataType="i4"
+                      cachedName="ACCESS_TOW"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[ACCESS_TOW]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[ACCESS_TOW]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].Columns[ACCESS_BKW]"
+                      cachedDataType="i4"
+                      cachedName="ACCESS_BKW"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[ACCESS_BKW]"
+                      lineageId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle].Columns[ACCESS_BKW]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Import Link Data\Ziel - Link Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Import Link Data\Ziel - Link Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[LINK_ID]"
+                      dataType="i4"
+                      name="LINK_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[FROM_NODE]"
+                      dataType="i4"
+                      name="FROM_NODE" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[TO_NODE]"
+                      dataType="i4"
+                      name="TO_NODE" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[ACCESS_TOW]"
+                      dataType="i4"
+                      name="ACCESS_TOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[ACCESS_BKW]"
+                      dataType="i4"
+                      name="ACCESS_BKW" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Ziels"
+                  synchronousInputId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import Link Data.Paths[Ausgabe der Flatfilequelle]"
+              endId="Package\Import Link Data\Ziel - Link Bulk Insert.Inputs[Destination Input]"
+              name="Ausgabe der Flatfilequelle"
+              startId="Package\Import Link Data\Quelle - Link_txt.Outputs[Ausgabe der Flatfilequelle]" />
+            <path
+              refId="Package\Import Link Data.Paths[Fehlerausgabe des OLE DB-Ziels]"
+              endId="Package\Import Link Data\Ziel - Link Row by Row Insert.Inputs[Destination Input]"
+              name="Fehlerausgabe des OLE DB-Ziels"
+              startId="Package\Import Link Data\Ziel - Link Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]" />
+            <path
+              refId="Package\Import Link Data.Paths[Fehlerausgabe des OLE DB-Ziels1]"
+              endId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Inputs[Destination Input]"
+              name="Fehlerausgabe des OLE DB-Ziels"
+              startId="Package\Import Link Data\Ziel - Link Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Import Link Data"
+          TopLeft="12.5,23.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import Link Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Import Link Data\Ziel - Link Bulk Insert"
+          TopLeft="21,107.5" />
+        <NodeLayout
+          Size="220,42"
+          Id="Package\Import Link Data\Ziel - Link Row by Row Insert"
+          TopLeft="355,150" />
+        <NodeLayout
+          Size="270,42"
+          Id="Package\Import Link Data\Ziel - Link_ImpError write to Error Table"
+          TopLeft="329,270" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Import Link Data\Quelle - Link_txt"
+          TopLeft="29.5,6.5" />
+        <EdgeLayout
+          Id="Package\Import Link Data.Paths[Fehlerausgabe des OLE DB-Ziels1]"
+          TopLeft="464.5,192">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,78"
+              Start="0,0"
+              End="0,70.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,70.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-71.817578125,29.41845703125,143.63515625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Link Data.Paths[Fehlerausgabe des OLE DB-Ziels]"
+          TopLeft="202,128.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="153,42.5"
+              Start="0,0"
+              End="145.5,42.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="72.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="72.5,0"
+                    Point2="76.5,0"
+                    Point3="76.5,4" />
+                  <mssgle:LineSegment
+                    End="76.5,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="76.5,38.5"
+                    Point2="76.5,42.5"
+                    Point3="80.5,42.5" />
+                  <mssgle:LineSegment
+                    End="145.5,42.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="4.68242187500002,-17.6630859375,143.63515625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import Link Data.Paths[Ausgabe der Flatfilequelle]"
+          TopLeft="110,48.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59"
+              Start="0,0"
+              End="0,51.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Link Data\Ziel - Link Bulk Insert">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Link Data\Ziel - Link_ImpError write to Error Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import Link Data\Ziel - Link Row by Row Insert">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,1306 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/22/2019 12:08:15 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ROBERT-PC03"
+  DTS:CreatorName="ROBERT-PC03\Robert"
+  DTS:DTSID="{B9D8DF64-902B-492E-8A6B-9B7B4EAED407}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.1900.80"
+  DTS:LocaleID="1031"
+  DTS:ObjectName="SSIS_BikeHike"
+  DTS:PackageType="5"
+  DTS:ProtectionLevel="2"
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{D1A02C3C-DE3C-420C-962B-D100462085DF}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FF ConMngr BikeHike_txt]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{9C3C4890-C8B2-4E6A-84CE-B35767861DFE}"
+      DTS:ObjectName="FF ConMngr BikeHike_txt">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1031"
+          DTS:HeaderRowsToSkip="4"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="T:\Robert\Maps\GIP\BikeHike.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{A0FD34CD-A170-40A7-8AF5-9BAEAAE9DC80}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USE_ID"
+              DTS:DTSID="{90197636-35B2-4417-BAB5-5BA37DF141D0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USE_ACCESS_TOW"
+              DTS:DTSID="{AC131DFD-C1FB-4EA8-BA39-0589E810D49E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USE_ACCESS_BKW"
+              DTS:DTSID="{A6D9A099-83AC-46CA-9C93-5B367CAA077D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 4"
+              DTS:DTSID="{F7331177-0EDC-43D9-9FF1-A013ADE1003B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 5"
+              DTS:DTSID="{8F5D618A-CADC-45D3-9E45-0CFF03202126}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 6"
+              DTS:DTSID="{09754F5B-7E33-471F-9A6C-E2CBCF8EE19E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 7"
+              DTS:DTSID="{1DA6F90B-C1E9-48FC-8113-3C35D4C6CA70}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 8"
+              DTS:DTSID="{6C5BF296-B42F-45A5-B2A9-5FC9AAD2D8ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BIKESIGNEDTOW"
+              DTS:DTSID="{C35C3161-96ED-451D-830E-1D5953B0F023}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BIKESIGNEDBKW"
+              DTS:DTSID="{B0B03322-2935-4C96-99EE-3C332432D0C3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 11"
+              DTS:DTSID="{21474475-4132-4765-8861-BC2E2C7450B5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 12"
+              DTS:DTSID="{568DC579-09F7-4F59-88CA-F66169DBE259}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 13"
+              DTS:DTSID="{D42865FF-489A-42D6-98B8-3AE995943D07}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 14"
+              DTS:DTSID="{BCC30FC9-C80A-47CF-B97A-8654F39DA30D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BIKEFEATURETOW"
+              DTS:DTSID="{38E45612-43B3-476F-9EEA-E5FFCBC07856}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BIKEFEATUREBKW"
+              DTS:DTSID="{BF87F577-2EC2-4206-BCFF-A68185FB80AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 17"
+              DTS:DTSID="{FAC0AEBD-E562-4B3F-BF42-305021C37F24}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 18"
+              DTS:DTSID="{EDCCB114-766E-4E1D-8E6B-AB879D5C0D2A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 19"
+              DTS:DTSID="{BC6B58EC-C93E-40D5-A6F1-9F4FDDC42A30}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 20"
+              DTS:DTSID="{14D57388-20A4-447D-B11A-ECCCB38EC2B6}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Import_BikeHike_Data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Datenflusstask"
+      DTS:DTSID="{EDB356D0-71F3-4F3A-A536-13868D2FEDDF}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import_BikeHike_Data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flatfilequelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Flatfilequelle"
+              localeId="1031"
+              name="Quelle-BikeHike_txt"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Gibt an, ob Spalten mit der Länge &quot;0&quot; als NULL behandelt werden."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen der Ausgabespalte an, die den Dateinamen enthält. Wenn kein Name angegeben wird, wird keine Ausgabespalte generiert, die den Dateinamen enthält."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[FF ConMngr BikeHike_txt]"
+                  connectionManagerRefId="Package.ConnectionManagers[FF ConMngr BikeHike_txt]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle]"
+                  name="Ausgabe der Flatfilequelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[USE_ID]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ID]"
+                      name="USE_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_TOW]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[USE_ACCESS_TOW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_TOW]"
+                      name="USE_ACCESS_TOW"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_BKW]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[USE_ACCESS_BKW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_BKW]"
+                      name="USE_ACCESS_BKW"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKESIGNEDTOW]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[BIKESIGNEDTOW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKESIGNEDTOW]"
+                      name="BIKESIGNEDTOW"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKESIGNEDBKW]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[BIKESIGNEDBKW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKESIGNEDBKW]"
+                      name="BIKESIGNEDBKW"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKEFEATUREBKW]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[BIKEFEATUREBKW]"
+                      length="50"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKEFEATUREBKW]"
+                      name="BIKEFEATUREBKW"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKEFEATURETOW]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[BIKEFEATURETOW]"
+                      length="50"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKEFEATURETOW]"
+                      name="BIKEFEATURETOW"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 0]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 0" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[USE_ID]"
+                      dataType="i4"
+                      name="USE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[USE_ACCESS_TOW]"
+                      dataType="decimal"
+                      name="USE_ACCESS_TOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[USE_ACCESS_BKW]"
+                      dataType="decimal"
+                      name="USE_ACCESS_BKW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 4]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 4" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 5]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 5" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 6]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 6" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 7]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 7" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 8]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 8" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[BIKESIGNEDTOW]"
+                      dataType="decimal"
+                      name="BIKESIGNEDTOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[BIKESIGNEDBKW]"
+                      dataType="decimal"
+                      name="BIKESIGNEDBKW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 11]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 11" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 12]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 12" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 13]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 13" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 14]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 14" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[BIKEFEATURETOW]"
+                      dataType="wstr"
+                      length="50"
+                      name="BIKEFEATURETOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[BIKEFEATUREBKW]"
+                      dataType="wstr"
+                      length="50"
+                      name="BIKEFEATUREBKW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 17]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 17" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 18]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 18" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 19]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 19" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 20]"
+                      codePage="65001"
+                      dataType="str"
+                      length="50"
+                      name="Column 20" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Fehlerausgabe der Flatfilequelle]"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der Flatfilequelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[Fehlerausgabespalte der Flatfilequelle]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Fehlerausgabespalte der Flatfilequelle"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[Fehlerausgabespalte der Flatfilequelle]"
+                      name="Fehlerausgabespalte der Flatfilequelle" />
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
+              description="OLE DB-Ziel"
+              name="Ziel-BikeHike Bulk Insert"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[BikeHike]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadMaxInsertCommitSize">10000</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Connections[OleDbConnection]"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels]"
+                  errorOrTruncationOperation="Einfügen"
+                  errorRowDisposition="RedirectRow"
+                  hasSideEffects="true"
+                  name="Eingabe des OLE DB-Ziels">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[USE_ID]"
+                      cachedDataType="i4"
+                      cachedName="USE_ID"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ID]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ID]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[USE_ACCESS_TOW]"
+                      cachedDataType="decimal"
+                      cachedName="USE_ACCESS_TOW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ACCESS_TOW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_TOW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[USE_ACCESS_BKW]"
+                      cachedDataType="decimal"
+                      cachedName="USE_ACCESS_BKW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ACCESS_BKW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_BKW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[BIKESIGNEDTOW]"
+                      cachedDataType="decimal"
+                      cachedName="BIKESIGNEDTOW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKESIGNEDTOW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKESIGNEDTOW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[BIKESIGNEDBKW]"
+                      cachedDataType="decimal"
+                      cachedName="BIKESIGNEDBKW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKESIGNEDBKW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKESIGNEDBKW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[BIKEFEATURETOW]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="BIKEFEATURETOW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKEFEATURETOW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKEFEATURETOW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[BIKEFEATUREBKW]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="BIKEFEATUREBKW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKEFEATUREBKW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKEFEATUREBKW]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ID]"
+                      dataType="i4"
+                      name="USE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ACCESS_TOW]"
+                      dataType="i4"
+                      name="USE_ACCESS_TOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ACCESS_BKW]"
+                      dataType="i4"
+                      name="USE_ACCESS_BKW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKESIGNEDTOW]"
+                      dataType="numeric"
+                      name="BIKESIGNEDTOW"
+                      precision="1" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKESIGNEDBKW]"
+                      dataType="numeric"
+                      name="BIKESIGNEDBKW"
+                      precision="1" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKEFEATURETOW]"
+                      dataType="wstr"
+                      length="254"
+                      name="BIKEFEATURETOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKEFEATUREBKW]"
+                      dataType="wstr"
+                      length="254"
+                      name="BIKEFEATUREBKW" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Ziels"
+                  synchronousInputId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
+              description="OLE DB-Ziel"
+              name="Ziel-BikeHike Row by Row Insert"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[BikeHike]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadMaxInsertCommitSize">10000</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Connections[OleDbConnection]"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels]"
+                  errorOrTruncationOperation="Einfügen"
+                  errorRowDisposition="RedirectRow"
+                  hasSideEffects="true"
+                  name="Eingabe des OLE DB-Ziels">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[USE_ID]"
+                      cachedDataType="i4"
+                      cachedName="USE_ID"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ID]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ID]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[USE_ACCESS_TOW]"
+                      cachedDataType="decimal"
+                      cachedName="USE_ACCESS_TOW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ACCESS_TOW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_TOW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[USE_ACCESS_BKW]"
+                      cachedDataType="decimal"
+                      cachedName="USE_ACCESS_BKW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ACCESS_BKW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_BKW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[BIKESIGNEDTOW]"
+                      cachedDataType="decimal"
+                      cachedName="BIKESIGNEDTOW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKESIGNEDTOW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKESIGNEDTOW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[BIKESIGNEDBKW]"
+                      cachedDataType="decimal"
+                      cachedName="BIKESIGNEDBKW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKESIGNEDBKW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKESIGNEDBKW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[BIKEFEATURETOW]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="BIKEFEATURETOW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKEFEATURETOW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKEFEATURETOW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].Columns[BIKEFEATUREBKW]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="BIKEFEATUREBKW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKEFEATUREBKW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKEFEATUREBKW]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ID]"
+                      dataType="i4"
+                      name="USE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ACCESS_TOW]"
+                      dataType="i4"
+                      name="USE_ACCESS_TOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ACCESS_BKW]"
+                      dataType="i4"
+                      name="USE_ACCESS_BKW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKESIGNEDTOW]"
+                      dataType="numeric"
+                      name="BIKESIGNEDTOW"
+                      precision="1" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKESIGNEDBKW]"
+                      dataType="numeric"
+                      name="BIKESIGNEDBKW"
+                      precision="1" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKEFEATURETOW]"
+                      dataType="wstr"
+                      length="254"
+                      name="BIKEFEATURETOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKEFEATUREBKW]"
+                      dataType="wstr"
+                      length="254"
+                      name="BIKEFEATUREBKW" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Ziels"
+                  synchronousInputId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
+              description="OLE DB-Ziel"
+              name="Ziel-BikeHike_ImpError Write to Error Table"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[BikeHike_ImpError]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadMaxInsertCommitSize">10000</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Connections[OleDbConnection]"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels]"
+                  errorOrTruncationOperation="Einfügen"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Eingabe des OLE DB-Ziels">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[USE_ID]"
+                      cachedDataType="i4"
+                      cachedName="USE_ID"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ID]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ID]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[USE_ACCESS_TOW]"
+                      cachedDataType="decimal"
+                      cachedName="USE_ACCESS_TOW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ACCESS_TOW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_TOW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[USE_ACCESS_BKW]"
+                      cachedDataType="decimal"
+                      cachedName="USE_ACCESS_BKW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ACCESS_BKW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_BKW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[BIKESIGNEDTOW]"
+                      cachedDataType="decimal"
+                      cachedName="BIKESIGNEDTOW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKESIGNEDTOW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKESIGNEDTOW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[BIKESIGNEDBKW]"
+                      cachedDataType="decimal"
+                      cachedName="BIKESIGNEDBKW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKESIGNEDBKW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKESIGNEDBKW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[BIKEFEATURETOW]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="BIKEFEATURETOW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKEFEATURETOW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKEFEATURETOW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[BIKEFEATUREBKW]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="BIKEFEATUREBKW"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKEFEATUREBKW]"
+                      lineageId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BIKEFEATUREBKW]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ID]"
+                      dataType="i4"
+                      name="USE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ACCESS_TOW]"
+                      dataType="i4"
+                      name="USE_ACCESS_TOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[USE_ACCESS_BKW]"
+                      dataType="i4"
+                      name="USE_ACCESS_BKW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKESIGNEDTOW]"
+                      dataType="numeric"
+                      name="BIKESIGNEDTOW"
+                      precision="1" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKESIGNEDBKW]"
+                      dataType="numeric"
+                      name="BIKESIGNEDBKW"
+                      precision="1" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKEFEATURETOW]"
+                      dataType="wstr"
+                      length="254"
+                      name="BIKEFEATURETOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[BIKEFEATUREBKW]"
+                      dataType="wstr"
+                      length="254"
+                      name="BIKEFEATUREBKW" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Ziels"
+                  synchronousInputId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import_BikeHike_Data.Paths[Ausgabe der Flatfilequelle]"
+              endId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Inputs[Eingabe des OLE DB-Ziels]"
+              name="Ausgabe der Flatfilequelle"
+              startId="Package\Import_BikeHike_Data\Quelle-BikeHike_txt.Outputs[Ausgabe der Flatfilequelle]" />
+            <path
+              refId="Package\Import_BikeHike_Data.Paths[Fehlerausgabe des OLE DB-Ziels]"
+              endId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Inputs[Eingabe des OLE DB-Ziels]"
+              name="Fehlerausgabe des OLE DB-Ziels"
+              startId="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]" />
+            <path
+              refId="Package\Import_BikeHike_Data.Paths[Fehlerausgabe des OLE DB-Ziels1]"
+              endId="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table.Inputs[Eingabe des OLE DB-Ziels]"
+              name="Fehlerausgabe des OLE DB-Ziels"
+              startId="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="187,42"
+          Id="Package\Import_BikeHike_Data"
+          TopLeft="124,63" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import_BikeHike_Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="196,42"
+          Id="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert"
+          TopLeft="45,108" />
+        <NodeLayout
+          Size="286,42"
+          Id="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table"
+          TopLeft="387,292" />
+        <NodeLayout
+          Size="173,42"
+          Id="Package\Import_BikeHike_Data\Quelle-BikeHike_txt"
+          TopLeft="54,24" />
+        <NodeLayout
+          Size="234,42"
+          Id="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert"
+          TopLeft="407,158" />
+        <EdgeLayout
+          Id="Package\Import_BikeHike_Data.Paths[Fehlerausgabe des OLE DB-Ziels1]"
+          TopLeft="527,200">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,92"
+              Start="0,0"
+              End="0,84.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,84.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-71.817578125,36.41845703125,143.63515625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import_BikeHike_Data.Paths[Fehlerausgabe des OLE DB-Ziels]"
+          TopLeft="241,129">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="166,50"
+              Start="0,0"
+              End="158.5,50">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="79,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="79,0"
+                    Point2="83,0"
+                    Point3="83,4" />
+                  <mssgle:LineSegment
+                    End="83,46" />
+                  <mssgle:CubicBezierSegment
+                    Point1="83,46"
+                    Point2="83,50"
+                    Point3="87,50" />
+                  <mssgle:LineSegment
+                    End="158.5,50" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="11.182421875,-17.6630859375,143.63515625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import_BikeHike_Data.Paths[Ausgabe der Flatfilequelle]"
+          TopLeft="141.75,66">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import_BikeHike_Data\Ziel-BikeHike Bulk Insert">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import_BikeHike_Data\Ziel-BikeHike_ImpError Write to Error Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import_BikeHike_Data\Ziel-BikeHike Row by Row Insert">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

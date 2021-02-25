@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="TummiSS.GIPrva.GIPadmin"
+  DTS:DTSID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=TummiSS;User ID=GIPadmin;Initial Catalog=GIPrva;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1"
+        p4:Salt="zbABq03Wsg=="
+        p4:IV="5hlz117A44c=" xmlns:p4="www.microsoft.com/SqlServer/SSIS">j9jPgtQf71Fq7HbW/jtYONIMG1YTEuXV+9BjDS8x/fymc+km9buN/XENFRrHhYq1JnpV0xDw7Sxxcj841lAa511PPRYVpNIi5IaGz4OwXMNWCQkY6gIM+ILYaN3Unkv1FXyXuJ1rrOhmWV8L9sQ03w19Uvi0jKnsYc/oVSKdMXo=</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
