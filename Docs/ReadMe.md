@@ -1,30 +1,30 @@
-## Zweck
+## Purpose
 
-Import der Verkehrsinfrastrukturdaten von GIP.at
+Import of transport infrastructure data from GIP.at
 
-## Dokumentation
+## Documentation
 
-Siehe: [GIPrva.pdf](p_GIPrva_V0.pdf)
+See: [GIPrva.pdf](p_GIPrva_V0.pdf)
 
-## Projekt installieren
+## Install project
 
-In Visual Studio Startfenster das Projekt klonen (Clone a repository). 
-Git Repository URL: https://github.com/robhubi/GIPrva.git
+In Visual Studio start window: "Clone a repository" 
+Git repository URL: https://github.com/robhubi/GIPrva.git
 Solution File: "Import GIP RVA.sln"
 
-## Projekt anpassen
+## Customise the project
 
-Die Pfade sind über die Connection Managers der SSIS Pakete zugänglich. Default-Werte:
+The paths are accessible via the connection managers of the SSIS packages. Default values:
 
-* Path CSV-Tabellen: "T:\Robert\Maps\GIP"
-* Eigenschaften SQL-Server: Name="TummiSS"; Database= "GIPrva"; LocaleID="German"
+* Path CSV tables: "T:\Robert\Maps\GIP"
+* Properties SQL server: Name="TummiSS"; Database="GIPrva"; LocaleID="German"
 
-## Download Daten
+## Download data
 
-1. Download "A - Routingexport: ZIP Archiv mit den einzelnen IDF Tabellen" von http://open.gip.gv.at/ogd/A_routingexport_ogd_split.zip
-2. Entpacken
+1. download "A - Routing export: ZIP archive with the individual IDF tables" from http://open.gip.gv.at/ogd/A_routingexport_ogd_split.zip
+2. unpack
 
-## Import Daten
+## Import data
 
-1. In VS Solution "GIPrva_DBproj2" öffnen. Am Beginn werden die Anmeldeinformationen zur Backend Datenbank abgefragt
-2. Rechtsklick auf SSIS-Paket "SSIS_MASTER.dtsx" - Execute Package
+1. in VS: open solution "GIPrva_DBproj2"  . At the beginning the login information for the backend database is requested. 
+2. right click on SSIS package "SSIS_MASTER.dtsx" - Execute Package
