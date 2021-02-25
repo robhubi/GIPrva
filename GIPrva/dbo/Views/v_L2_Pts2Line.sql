@@ -1,6 +1,6 @@
 ﻿
 /*
-* Create geography polyline from points (lat,lon)
+* Create geography line from points (lat,lon)
 * for each group LINK_ID
 *
 * Ref.: https://stackoverflow.com/questions/48241483
