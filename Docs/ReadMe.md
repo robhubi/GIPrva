@@ -14,10 +14,10 @@ Solution File: "Import GIP RVA.sln"
 
 ## Customise the project
 
-The paths are accessible via the connection managers of the SSIS packages. Default values:
+The values are accessible via the connection managers of the SSIS packages:
 
-* Path CSV tables: "T:\Robert\Maps\GIP"
-* Properties SQL server: Name="TummiSS"; Database="GIPrva"; LocaleID="German"
+* Edit Flat File Connection Managers: Path to CSV tables
+* Edit (project) OLE DB connection Manager: Server name; Authentication, database name = "GIPrva"
 
 ## Download data
 
@@ -26,5 +26,5 @@ The paths are accessible via the connection managers of the SSIS packages. Defau
 
 ## Import data
 
-1. in VS: open solution "GIPrva_DBproj2"  . At the beginning the login information for the backend database is requested. 
+1. in VS: open solution "GIPrva_DBproj2". Enter the password to decrypt the sensitive data. 
 2. right click on SSIS package "SSIS_MASTER.dtsx" - Execute Package
