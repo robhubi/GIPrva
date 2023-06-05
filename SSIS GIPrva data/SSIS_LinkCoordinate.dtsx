@@ -7,13 +7,13 @@
   DTS:CreatorName="ROBERT-PC03\Robert"
   DTS:DTSID="{380C35AA-FF6D-43A9-B584-4C8D8CDD103D}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.1900.80"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="1031"
   DTS:ObjectName="SSIS_LinkCoordinate"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{4F036B96-E64F-41EF-81BF-9D6C82C8633B}">
+  DTS:VersionBuild="15"
+  DTS:VersionGUID="{9060C7A9-9687-4521-8488-2638287A894F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +31,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="T:\Robert\Maps\GIP\LinkCoordinate.txt">
+          DTS:ConnectionString="G:\LinkCoordinate.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -40,7 +40,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 0"
-              DTS:DTSID="{689C2CDD-978C-4C7D-90AB-E80D8145FCC1}"
+              DTS:DTSID="{98267881-E071-473F-8934-AC950F36CB63}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="LINK_ID"
-              DTS:DTSID="{A83AD1DD-4D69-4A79-AC59-07624E0087F1}"
+              DTS:DTSID="{4C3AA967-3B7A-4703-8BC9-12BB1836905C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -56,7 +56,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="COUNT"
-              DTS:DTSID="{383344EB-21B5-422E-81A6-6BF1C9C36D12}"
+              DTS:DTSID="{B1136C81-D949-4593-8585-B71FBD2F581A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -64,7 +64,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="X"
-              DTS:DTSID="{2E216927-6D18-4B46-BB9C-4AF33FB17FCB}"
+              DTS:DTSID="{FA4AE00F-E098-43F0-BF9A-04DD70F29B71}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -72,7 +72,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="Y"
-              DTS:DTSID="{CB529225-BE0C-4077-A8C0-62E06A80372E}"
+              DTS:DTSID="{DD9ED8B7-5CAF-48FB-B5A5-E6D424A74787}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -80,7 +80,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="Z"
-              DTS:DTSID="{6B22C8E5-F454-43AA-9191-68591AB376C4}"
+              DTS:DTSID="{5F48BBB3-4C26-4F33-858D-0D9161EE7FE3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -89,7 +89,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 6"
-              DTS:DTSID="{A78C1873-762F-48EE-88B5-4733AA88EEEE}"
+              DTS:DTSID="{0B061B2F-0F38-4E00-901D-33F769908284}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -97,7 +97,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 7"
-              DTS:DTSID="{556146FB-A893-4A19-8BA2-6009407C924C}"
+              DTS:DTSID="{BC03D7BC-F11E-4B8F-BE01-E8542040749A}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -885,13 +885,13 @@
           Id="Package\Import LinkCoordinate Data\Ziel_LinkCoordinate Row by Row Insert"
           TopLeft="386,177" />
         <NodeLayout
-          Size="205,42"
-          Id="Package\Import LinkCoordinate Data\Quelle_LinkCoordinate_txt"
-          TopLeft="18,38" />
-        <NodeLayout
           Size="314,42"
           Id="Package\Import LinkCoordinate Data\Ziel_LinkCoordinate_ImpError Row by Row Insert"
           TopLeft="367,292" />
+        <NodeLayout
+          Size="205,42"
+          Id="Package\Import LinkCoordinate Data\Quelle_LinkCoordinate_txt"
+          TopLeft="18,38" />
         <EdgeLayout
           Id="Package\Import LinkCoordinate Data.Paths[Fehlerausgabe des OLE DB-Ziels1]"
           TopLeft="521.5,219">

@@ -8,37 +8,16 @@
   DTS:Description="DTS Wizard-generated package"
   DTS:DTSID="{7674CFBF-D255-45C7-BEF4-0F2A865AD6BB}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.1900.80"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="1031"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="SSIS_LinkUse"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="23"
-  DTS:VersionGUID="{F6299CB7-B082-4A22-87DE-04D3B4EFCB50}">
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{A7007288-002A-4896-9EAD-937E8E22E1E3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[DestinationConnectionOLEDB]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{01AFE9A0-CFDC-4132-A688-298413BEEBE3}"
-      DTS:ObjectName="DestinationConnectionOLEDB">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=TummiSS;User ID=GIPadmin;Initial Catalog=GIPrva;Provider=SQLNCLI11;Auto Translate=false;">
-          <EncryptedData
-            Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="mCIAvLHbCw=="
-            IV="Qy706mRKsO8=" xmlns="http://www.w3.org/2001/04/xmlenc#">
-            <EncryptionMethod
-              Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
-            <CipherData>
-              <CipherValue>Qy706mRKsO+BR9GTOmsIqIK/n/jhDoZGkZ/PifIrE0ztvWEcbHZVpcBiDjLBXEjZ+H1V2GFCLWHDff4EzHwzJTYI3Tl19TyLgqtStmGujeZdtHkXEfssHvZahY4aHmxepCOQ5R62FnHKVu1pyZyIspsRcAm2p/xAjQE+MA74pp8=</CipherValue>
-            </CipherData>
-          </EncryptedData>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Flat File ConMngr LinkUse]"
       DTS:CreationName="FLATFILE"
@@ -53,7 +32,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="T:\Robert\Maps\GIP\LinkUse.txt">
+          DTS:ConnectionString="G:\LinkUse.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -62,7 +41,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 0"
-              DTS:DTSID="{919B356E-F349-4E53-8F81-05F56C4EC67A}"
+              DTS:DTSID="{2744305B-8ACA-4E16-90E6-7C91A0B6AF9A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -70,7 +49,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="USE_ID"
-              DTS:DTSID="{C1EA48EF-EB19-4216-B84B-4879E6E925CA}"
+              DTS:DTSID="{E7322904-8842-4BCC-9F99-044CFF75EBD9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -78,7 +57,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="LINK_ID"
-              DTS:DTSID="{2D008616-30CB-4533-A542-E829EFA23B46}"
+              DTS:DTSID="{0AA9B75F-3564-46DF-951B-A52029CED3D2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -86,7 +65,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 3"
-              DTS:DTSID="{134C46AA-50CC-4494-9649-1377DFBF3ABD}"
+              DTS:DTSID="{D85DF151-5993-4856-BD78-9A6F0DDF9D43}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -94,7 +73,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="OFFSET"
-              DTS:DTSID="{77DFC4DB-9DD2-459D-B940-17A6BBB260B0}"
+              DTS:DTSID="{55C9BF1C-E307-4AC2-A0CA-850E2DE5802F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +81,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 5"
-              DTS:DTSID="{B7C2AE93-3FB9-49AC-8211-18043563A592}"
+              DTS:DTSID="{CC0E5755-A656-41DB-8BC2-1B89705EFE3B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -110,7 +89,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 6"
-              DTS:DTSID="{C8D174DA-9F32-4C0E-A690-C400C3C827C2}"
+              DTS:DTSID="{FC62FA26-AC48-4EF8-81C7-D9DB8308AE99}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -118,7 +97,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="FROM_PERCENT"
-              DTS:DTSID="{ECBB1074-6BEE-4ED0-B2D2-424F9D8CD37A}"
+              DTS:DTSID="{0EE1BFC0-3CC1-41C3-AD21-A3C319A7CDFC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -126,7 +105,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="TO_PERCENT"
-              DTS:DTSID="{83019397-D783-4371-B506-DAB2EC31A7EA}"
+              DTS:DTSID="{03E2D4B6-6DA6-45F4-8624-BCFF8CF43E1E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -134,7 +113,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="BASETYPE"
-              DTS:DTSID="{916A725F-5210-4E17-91FD-50BEC704629D}"
+              DTS:DTSID="{BDF512DF-91FE-449A-A741-289F1021E71F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -142,7 +121,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="USE_ACCESS_TOW"
-              DTS:DTSID="{F14031CD-AA94-4A73-AED6-80C0596A2250}"
+              DTS:DTSID="{342F71FE-10CC-4826-9FE7-38E015982318}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -150,7 +129,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="USE_ACCESS_BKW"
-              DTS:DTSID="{9B6013A3-AEB6-4CB1-9AF2-8D9E742653E6}"
+              DTS:DTSID="{CDC9FEC5-9224-43FB-9F14-9ACAF63CF600}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -159,7 +138,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 12"
-              DTS:DTSID="{4306BD2D-AB47-424D-92DC-27AF95C52537}"
+              DTS:DTSID="{6671A06B-1559-470A-8337-8315E9C1D6FC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -167,7 +146,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 13"
-              DTS:DTSID="{E5B3C3A9-6B65-486D-8AEC-E3FB2E52FAD9}"
+              DTS:DTSID="{63AC8032-2486-4840-BCC7-F4CC32DB0CAC}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -175,7 +154,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 14"
-              DTS:DTSID="{4A69C9F2-8022-4816-9EDD-2D14D67A014B}"
+              DTS:DTSID="{E5DF0E5E-F126-401A-9822-4845B7D5B410}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -183,7 +162,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 15"
-              DTS:DTSID="{4E2CC376-AB78-4195-8B33-7E638636BEE9}"
+              DTS:DTSID="{90B04367-2BE4-4847-82B5-F76BE3267E22}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -191,472 +170,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 16"
-              DTS:DTSID="{C2BEDDA8-88D4-492A-990F-9625FF183A20}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[SourceConnectionFlatFile]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{59B95B47-B922-4713-AD56-C2649661D218}"
-      DTS:ObjectName="SourceConnectionFlatFile">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="1033"
-          DTS:HeaderRowsToSkip="4"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x0022_"
-          DTS:CodePage="65001"
-          DTS:ConnectionString="T:\Robert\Maps\GIP\Link_Test.txt">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 0"
-              DTS:DTSID="{2CD36B64-ABB9-4C8F-8F44-67204C3ED9E9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="LINK_ID"
-              DTS:DTSID="{9E569E90-9892-40B5-B834-B4E921C37B83}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 2"
-              DTS:DTSID="{CF4153F1-BE3E-4746-9337-2A747C081348}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 3"
-              DTS:DTSID="{9B1C2647-F147-4234-A975-5AB06188C5A6}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="FROM_NODE"
-              DTS:DTSID="{5C4AE1C6-0D73-445F-900A-5AE2A724BEA8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="TO_NODE"
-              DTS:DTSID="{6384D6DC-51F5-4323-A37A-F6CAB6A5C60C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 6"
-              DTS:DTSID="{C0786DAC-59DD-43D0-9DFF-BD48B06D4DCC}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 7"
-              DTS:DTSID="{B53AAA05-51FA-4364-AF9E-F4F6DC064CB3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 8"
-              DTS:DTSID="{7D3C33D8-4716-4C83-B93A-43FDEF4B4C22}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 9"
-              DTS:DTSID="{F259257C-DD36-4738-9D9C-62BC81FC6D7B}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 10"
-              DTS:DTSID="{535D67C4-4A67-4CEE-9AF3-80472816CAF1}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 11"
-              DTS:DTSID="{D7032175-F3D3-42F1-BFA5-8A1BB73160A7}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 12"
-              DTS:DTSID="{7F608F75-B1CB-48C7-A4C1-D6A0A4FEB8C8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 13"
-              DTS:DTSID="{2E8B2B89-3995-4494-9A66-C96AB116F101}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ACCESS_TOW"
-              DTS:DTSID="{D56AF8C0-74AE-416A-9D2F-2573F52F8F3C}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:DataType="3"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ACCESS_BKW"
-              DTS:DTSID="{FC9297C7-3E3A-43E6-A91E-51792500D895}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 16"
-              DTS:DTSID="{4E96E25D-9029-4A5F-8685-1C784DF71E8E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 17"
-              DTS:DTSID="{93D11FC1-8A11-40D6-A644-5BC3484EAB97}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 18"
-              DTS:DTSID="{94C4B32F-1247-4493-BAFE-A11D34DB00B2}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 19"
-              DTS:DTSID="{05A99ED6-7F6B-48AF-9F07-64A6AC8EAA82}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 20"
-              DTS:DTSID="{D36FE81C-B0DF-443F-8438-B6B822C569A8}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 21"
-              DTS:DTSID="{D81883E2-4A03-408D-B86F-912694ACBD66}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 22"
-              DTS:DTSID="{62D34B10-4687-4B58-82B0-BE785F93A96A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 23"
-              DTS:DTSID="{97A35CAE-0970-4DEB-98B0-B9F0F3EB5DC3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 24"
-              DTS:DTSID="{5301B8E3-E235-4D80-B27C-89E9716A4B88}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 25"
-              DTS:DTSID="{7285B395-A2D7-4293-95AB-EA0EEEEE1877}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 26"
-              DTS:DTSID="{67553222-82EE-42E3-8BC1-B0E2610B9626}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 27"
-              DTS:DTSID="{7CB532F1-B00D-43BD-93D7-89358CFC41E9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 28"
-              DTS:DTSID="{2F3444E2-5119-46A7-A9E1-C5BA77BE2955}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 29"
-              DTS:DTSID="{E49CC8A3-5964-475B-9C7B-7BA7B2070449}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 30"
-              DTS:DTSID="{5D06E76D-7E5A-46BA-8931-913C90CCD523}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 31"
-              DTS:DTSID="{D1E29708-9A46-432D-B31D-EEC58591837A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 32"
-              DTS:DTSID="{EEC3FBEE-4555-4BC6-9DDD-9F37C6A33202}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 33"
-              DTS:DTSID="{A253F896-4E98-4CF3-AA81-725A84B74360}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 34"
-              DTS:DTSID="{D78D316B-2688-4750-B4FC-3C4E18EADEDD}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 35"
-              DTS:DTSID="{10186307-BF6B-48D5-A504-ECC167CCBD91}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 36"
-              DTS:DTSID="{0D90AD67-9173-416A-BE7C-C96D0B38ED7E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 37"
-              DTS:DTSID="{51C8FC52-50D2-4218-AC8A-3EA6DCABAD43}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 38"
-              DTS:DTSID="{68288C16-95CA-48A1-8B36-521C7C4D4FA4}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 39"
-              DTS:DTSID="{D90AD205-59FC-4A37-A388-41F0FACC5524}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 40"
-              DTS:DTSID="{8056FB3C-C5DE-4FE0-8613-09344AE1D4E9}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 41"
-              DTS:DTSID="{EC05ECAC-979D-4008-9BC0-997AA8DB8464}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 42"
-              DTS:DTSID="{09FBA831-91BF-4830-B973-03F821581D74}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 43"
-              DTS:DTSID="{83F016E6-5D22-4C7E-8D59-18D1356755E4}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 44"
-              DTS:DTSID="{538CA915-7451-48A1-95BF-E5230A9E6387}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 45"
-              DTS:DTSID="{15FF17C7-4B78-4E61-A7A2-B75600098334}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 46"
-              DTS:DTSID="{06154F00-EF35-4723-A054-EF62777BE392}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 47"
-              DTS:DTSID="{35726D90-E7FC-4913-B052-AB50A282BC40}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x003B_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 48"
-              DTS:DTSID="{C1B7BB42-3D5E-4E88-94FB-22FB1BCAEB4A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Spalte 49"
-              DTS:DTSID="{7543C792-3009-4AFC-8D6E-B2599CE0277B}"
+              DTS:DTSID="{D745ED9F-C92E-4066-8E9F-7E71A904BCC3}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -1136,19 +650,16 @@
                       scale="4" />
                     <externalMetadataColumn
                       refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[BASETYPE]"
-                      dataType="numeric"
-                      name="BASETYPE"
-                      precision="10" />
+                      dataType="i4"
+                      name="BASETYPE" />
                     <externalMetadataColumn
                       refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[USE_ACCESS_TOW]"
-                      dataType="numeric"
-                      name="USE_ACCESS_TOW"
-                      precision="8" />
+                      dataType="i4"
+                      name="USE_ACCESS_TOW" />
                     <externalMetadataColumn
                       refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[USE_ACCESS_BKW]"
-                      dataType="numeric"
-                      name="USE_ACCESS_BKW"
-                      precision="8" />
+                      dataType="i4"
+                      name="USE_ACCESS_BKW" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1331,19 +842,16 @@
                       scale="4" />
                     <externalMetadataColumn
                       refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[BASETYPE]"
-                      dataType="numeric"
-                      name="BASETYPE"
-                      precision="10" />
+                      dataType="i4"
+                      name="BASETYPE" />
                     <externalMetadataColumn
                       refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[USE_ACCESS_TOW]"
-                      dataType="numeric"
-                      name="USE_ACCESS_TOW"
-                      precision="8" />
+                      dataType="i4"
+                      name="USE_ACCESS_TOW" />
                     <externalMetadataColumn
                       refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[USE_ACCESS_BKW]"
-                      dataType="numeric"
-                      name="USE_ACCESS_BKW"
-                      precision="8" />
+                      dataType="i4"
+                      name="USE_ACCESS_BKW" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -1538,19 +1046,16 @@
                       scale="4" />
                     <externalMetadataColumn
                       refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[BASETYPE]"
-                      dataType="numeric"
-                      name="BASETYPE"
-                      precision="10" />
+                      dataType="i4"
+                      name="BASETYPE" />
                     <externalMetadataColumn
                       refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[USE_ACCESS_TOW]"
-                      dataType="numeric"
-                      name="USE_ACCESS_TOW"
-                      precision="8" />
+                      dataType="i4"
+                      name="USE_ACCESS_TOW" />
                     <externalMetadataColumn
                       refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[USE_ACCESS_BKW]"
-                      dataType="numeric"
-                      name="USE_ACCESS_BKW"
-                      precision="8" />
+                      dataType="i4"
+                      name="USE_ACCESS_BKW" />
                     <externalMetadataColumn
                       refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[ErrorCode]"
                       dataType="i4"

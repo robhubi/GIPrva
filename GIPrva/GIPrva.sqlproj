@@ -86,5 +86,10 @@
     <Build Include="Security\GIPadmin_1.sql" />
     <Build Include="Security\RoleMemberships.sql" />
     <Build Include="dbo\Tables\LUT_INTREST_BIT.sql" />
+    <Build Include="dbo\Views\v_Wanderwege_alle_geo.sql" />
+    <Build Include="dbo\Tables\LUT_SUSTAINER.sql" />
+    <Build Include="dbo\Tables\LUT_StreetCategory.sql" />
+    <Build Include="dbo\Tables\LUT_FRC.sql" />
+    <Build Include="dbo\Tables\LUT_FOW.sql" />
   </ItemGroup>
 </Project>

@@ -1,16 +1,24 @@
 ﻿CREATE TABLE [dbo].[Link] (
-    [LINK_ID]    INT               NOT NULL,
-    [FROM_NODE]  INT               NOT NULL,
-    [TO_NODE]    INT               NOT NULL,
-    [ACCESS_TOW] INT               NULL,
-    [ACCESS_BKW] INT               NULL,
-    [cLONx100]   INT               NULL,
-    [cLATx100]   INT               NULL,
-    [LINE_GEO]   [sys].[geography] NULL,
+    [LINK_ID]       INT               NOT NULL,
+    [FROM_NODE]     INT               NOT NULL,
+    [TO_NODE]       INT               NOT NULL,
+    [ACCESS_TOW]    INT               NULL,
+    [ACCESS_BKW]    INT               NULL,
+    [cLONx100]      INT               NULL,
+    [cLATx100]      INT               NULL,
+    [NAME1]         NVARCHAR (254)    NULL,
+    [NAME2]         NVARCHAR (254)    NULL,
+    [STREETCAT]     CHAR (3)          NULL,
+    [FUNCROADCLASS] INT               NULL,
+    [FORMOFWAY]     INT               NULL,
+    [SUSTAINER]     NVARCHAR (50)     NULL,
+    [LINE_GEO]      [sys].[geography] NULL,
     PRIMARY KEY CLUSTERED ([LINK_ID] ASC),
     CONSTRAINT [FK_foLink_Node] FOREIGN KEY ([FROM_NODE]) REFERENCES [dbo].[Node] ([NODE_ID]),
     CONSTRAINT [FK_toLink_Node] FOREIGN KEY ([TO_NODE]) REFERENCES [dbo].[Node] ([NODE_ID])
 );
+
+
 
 
 GO

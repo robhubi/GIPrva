@@ -5,12 +5,14 @@
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
       DTS:ConnectionString="Data Source=TummiSS;User ID=GIPadmin;Initial Catalog=GIPrva;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
       <DTS:Password
         DTS:Name="Password"
         Sensitive="1"
-        p4:Salt="zbABq03Wsg=="
-        p4:IV="5hlz117A44c=" xmlns:p4="www.microsoft.com/SqlServer/SSIS">j9jPgtQf71Fq7HbW/jtYONIMG1YTEuXV+9BjDS8x/fymc+km9buN/XENFRrHhYq1JnpV0xDw7Sxxcj841lAa511PPRYVpNIi5IaGz4OwXMNWCQkY6gIM+ILYaN3Unkv1FXyXuJ1rrOhmWV8L9sQ03w19Uvi0jKnsYc/oVSKdMXo=</DTS:Password>
+        p4:Salt="IDQ9SL0zMQ=="
+        p4:IV="3tYnrRaHpMY=" xmlns:p4="www.microsoft.com/SqlServer/SSIS">I/wqZYfjrAXWBrqF0r/cTbtOtXLuhQN2+xY+buZSjGvIZ65Uiq/XoMk0C0v5Z+5rAc45Sg0UfFQxvt+RDtukHhbf/IWaWCChltT0zZDSvxEGlcH6rrsLhOxOOhoy8xJWbrWBSy19t24UvhSL+HfJrRk3ZKuMqjPJkJ9+Fyi7eXY=</DTS:Password>
     </DTS:ConnectionManager>
   </DTS:ObjectData>
 </DTS:ConnectionManager>

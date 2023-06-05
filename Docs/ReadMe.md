@@ -12,7 +12,7 @@ Proof of concept achieved
 
 ### Prerequisites
 
-Visual Studio 2019 + SQL Server Integration Services Projects Extension, SQL Server
+Visual Studio 2017 or VS2019 + SQL Server Integration Services Projects Extension, SQL Server
 
 ### Install project
 
@@ -20,11 +20,16 @@ In Visual Studio start window: "Clone a repository" <br/>
 Git repository URL: https://github.com/robhubi/GIPrva.git <br/>
 Solution File: "Import GIP RVA.sln"
 
+### Create Database
+- Add a new database "GIPrva" to your SQL Server
+- Start script "createAllTbls.sql" 
+
 ### Customise the project
 
 The values are accessible via the connection managers of the SSIS packages:
 
-* Edit Flat File Connection Managers: Path to CSV tables
+* For Flat File Connection Managers: Map path to CSV tables to drive letter "G"
+* Edit Flat File Connection Managers: Edit path to SQL scripts
 * Edit (project) OLE DB connection Manager: Server name; Authentication, database name = "GIPrva"
 
 ### Download data

@@ -7,13 +7,13 @@
   DTS:CreatorName="ROBERT-PC03\Robert"
   DTS:DTSID="{B423E731-3189-4B80-8A03-71D595811203}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.1900.80"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="1031"
   DTS:ObjectName="SSIS_Node"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{9857ED1C-EDC2-4B64-943A-B4C291F9B6BD}">
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{E68E5E2F-28F9-474D-A9D0-8449D9D281DB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -31,7 +31,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="65001"
-          DTS:ConnectionString="T:\Robert\Maps\GIP\Node.txt">
+          DTS:ConnectionString="G:\Node.txt">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -40,7 +40,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 0"
-              DTS:DTSID="{469AB84D-B1C9-4BA8-A1DC-8EA16A975EBB}"
+              DTS:DTSID="{B7546EBA-79FB-4933-B422-E11ADACDE9E9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="NODE_ID"
-              DTS:DTSID="{63EF7DCC-2588-4EF3-9EDD-2B119F1B524D}"
+              DTS:DTSID="{9687989E-7193-443A-AEFB-E4D2EE22ABA7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -56,7 +56,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 2"
-              DTS:DTSID="{5D27FB00-E584-4A42-A4BC-F8CC82ED26A0}"
+              DTS:DTSID="{D7B92EFD-D91E-48C3-9DD0-41260C54E3E9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -64,7 +64,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 3"
-              DTS:DTSID="{A9E5A391-C00F-4A6A-ACB7-C67FDF8E701A}"
+              DTS:DTSID="{42CB2763-5A29-4899-9456-C8FEC6ADEDD1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -72,7 +72,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="X"
-              DTS:DTSID="{26DE83B4-9F8D-4C20-8EEB-B62D3B91DE9E}"
+              DTS:DTSID="{2AE0175B-F0D3-40B6-AFA7-E0DF70BBF677}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -80,7 +80,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="Y"
-              DTS:DTSID="{A3DA0C41-26D6-463D-B3F6-B52CAE12BD77}"
+              DTS:DTSID="{EC15AA0F-0CFA-4D33-9767-38D833DF71A3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -88,7 +88,7 @@
               DTS:DataType="14"
               DTS:TextQualified="True"
               DTS:ObjectName="Z"
-              DTS:DTSID="{37F55046-0726-419D-84D8-140295017363}"
+              DTS:DTSID="{E9D93D01-5C2E-43BA-BEA5-8948CCCC1066}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -96,7 +96,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 7"
-              DTS:DTSID="{C8C58056-974B-4486-AAEC-4279A808951A}"
+              DTS:DTSID="{CC394D23-7E00-4CE8-A3C9-BBF145539D9D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -104,7 +104,7 @@
               DTS:DataType="4"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 8"
-              DTS:DTSID="{0E2F6F54-E54B-4D29-80F5-6DA86EFAC060}"
+              DTS:DTSID="{37A8899A-C4BD-4D50-A51A-A5C47B6E49B1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -112,7 +112,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 9"
-              DTS:DTSID="{7C527AFD-7263-43F7-AA68-EEDD7DFC7ADF}"
+              DTS:DTSID="{3CFFD5CA-5AC7-4632-82F3-F9F6EB9126AD}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -121,7 +121,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 10"
-              DTS:DTSID="{63A2A54B-409F-49A1-8A5C-DEC175923D10}"
+              DTS:DTSID="{3EB3B9C1-8B6C-4A3D-8091-2BD2DDB0C5C3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +129,7 @@
               DTS:DataType="20"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 11"
-              DTS:DTSID="{50110FC4-F5FD-402F-A90F-C9F763024C10}"
+              DTS:DTSID="{2BC93D0B-1AAC-438A-A51E-E0229E194504}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -137,7 +137,7 @@
               DTS:DataType="16"
               DTS:TextQualified="True"
               DTS:ObjectName="Column 12"
-              DTS:DTSID="{04CFD6C8-54A3-4655-BC3A-8B97F58865AD}"
+              DTS:DTSID="{9B1164F0-C2D2-4B0B-8282-549B5A658D5F}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -885,7 +885,7 @@
     design-time-name="Package\Import_Node_Data">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="221,42"
           Id="Package\Import_Node_Data\Ziel_Node Row by Row Insert"
@@ -907,7 +907,7 @@
           TopLeft="493.5,230">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,49"
               Start="0,0"
               End="0,41.5">
@@ -931,7 +931,7 @@
           TopLeft="235,170">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="147,39"
               Start="0,0"
               End="139.5,39">
@@ -967,7 +967,7 @@
           TopLeft="142.75,93">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,56"
               Start="0,0"
               End="0,48.5">
@@ -981,9 +981,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

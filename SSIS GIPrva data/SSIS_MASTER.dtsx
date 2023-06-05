@@ -7,13 +7,13 @@
   DTS:CreatorName="ROBERT-PC03\Robert"
   DTS:DTSID="{7C32DC3C-7F74-4273-8475-C342CBCC8772}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.1900.80"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
   DTS:LocaleID="1031"
   DTS:ObjectName="SSIS_MASTER"
   DTS:PackageType="5"
   DTS:ProtectionLevel="2"
-  DTS:VersionBuild="17"
-  DTS:VersionGUID="{212DD2B3-1935-4551-B7F1-7473F2D8A736}">
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{2437E446-7F81-445B-BE56-3F914C64DE20}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -24,7 +24,7 @@
       DTS:ObjectName="calcGeogrVals.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="G:\Robert\Documents\Visual Studio 2019\Projects\GIPrva_DBproj2\GIPrva_DBproj2\calcGeogrVals.sql" />
+          DTS:ConnectionString="C:\Users\GIPadmin\Documents\Visual Studio 2017\GIPrva\GIPrva_DBproj2\calcGeogrVals.sql" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -34,7 +34,7 @@
       DTS:ObjectName="createAllTbls.sql">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="G:\Robert\Documents\Visual Studio 2019\Projects\GIPrva_DBproj2\GIPrva_DBproj2\createAllTbls.sql" />
+          DTS:ConnectionString="C:\Users\GIPadmin\Documents\Visual Studio 2017\GIPrva\GIPrva_DBproj2\createAllTbls.sql" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -233,7 +233,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
         <NodeLayout
           Size="224,42"
           Id="Package\Sequence Container\Task &quot;Import LinkCoordinate&quot;"
@@ -274,7 +274,7 @@
           TopLeft="296.5,158">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,39"
               Start="0,0"
               End="0,31.5">
@@ -296,7 +296,7 @@
           TopLeft="298.5,239">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,51"
               Start="0,0"
               End="0,43.5">
@@ -318,7 +318,7 @@
           TopLeft="303.25,434">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,40"
               Start="0,0"
               End="0,32.5">
@@ -340,7 +340,7 @@
           TopLeft="302.5,516">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,39"
               Start="0,0"
               End="0,31.5">
@@ -362,7 +362,7 @@
           TopLeft="297.5,72">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,44"
               Start="0,0"
               End="0,36.5">
