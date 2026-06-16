@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{72c7bf73-b872-422a-820a-d2f9df4a50e2}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -57,5 +57,35 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Views" />
+    <Folder Include="PreD_Scripts" />
+    <Folder Include="PostD_Scripts" />
+    <Folder Include="StoredProcedures" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="StoredProcedures\Fill_LUTs.sql" />
+    <Build Include="Tables\BikeHike.sql" />
+    <Build Include="Tables\Link.sql" />
+    <Build Include="Tables\LinkCoordinate.sql" />
+    <Build Include="Tables\LinkUse.sql" />
+    <Build Include="Tables\LUT_BASETYPE.sql" />
+    <Build Include="Tables\LUT_BIKEMERKMAL.sql" />
+    <Build Include="Tables\LUT_FOW.sql" />
+    <Build Include="Tables\LUT_FRC.sql" />
+    <Build Include="Tables\LUT_INTREST_BIT.sql" />
+    <Build Include="Tables\LUT_StreetCategory.sql" />
+    <Build Include="Tables\LUT_SUSTAINER.sql" />
+    <Build Include="Tables\Node.sql" />
+    <Build Include="Views\v_Link_BikeUse.sql" />
+    <Build Include="Views\v_LinkUse.sql" />
+    <Build Include="Views\v_LinkUse_HikeBike.sql" />
+    <Build Include="Views\v_Wanderwege_alle_geo.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GIP2rva.Database.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="PostD_Scripts\Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>

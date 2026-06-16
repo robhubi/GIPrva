@@ -5,18 +5,37 @@ VisualStudioVersion = 15.0.36324.19
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GIP2rva.Database", "GIP2rva.Database\GIP2rva.Database.sqlproj", "{72C7BF73-B872-422A-820A-D2F9DF4A50E2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{B6C9A630-9971-489C-8617-D98273DB9E6E}"
+	ProjectSection(SolutionItems) = preProject
+		Docs\ChangeLog.md = Docs\ChangeLog.md
+		Docs\p_GIPrva_V0.pdf = Docs\p_GIPrva_V0.pdf
+		Docs\ReadMe.md = Docs\ReadMe.md
+	EndProjectSection
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS GIPrva data", "SSIS GIPrva data\SSIS GIPrva data.dtproj", "{E5F6F626-C440-47B4-A962-1AAF5136F722}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{72C7BF73-B872-422A-820A-D2F9DF4A50E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{72C7BF73-B872-422A-820A-D2F9DF4A50E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72C7BF73-B872-422A-820A-D2F9DF4A50E2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{72C7BF73-B872-422A-820A-D2F9DF4A50E2}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{72C7BF73-B872-422A-820A-D2F9DF4A50E2}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{72C7BF73-B872-422A-820A-D2F9DF4A50E2}.Development|Any CPU.Deploy.0 = Debug|Any CPU
 		{72C7BF73-B872-422A-820A-D2F9DF4A50E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72C7BF73-B872-422A-820A-D2F9DF4A50E2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{72C7BF73-B872-422A-820A-D2F9DF4A50E2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E5F6F626-C440-47B4-A962-1AAF5136F722}.Debug|Any CPU.ActiveCfg = Development
+		{E5F6F626-C440-47B4-A962-1AAF5136F722}.Debug|Any CPU.Build.0 = Development
+		{E5F6F626-C440-47B4-A962-1AAF5136F722}.Development|Any CPU.ActiveCfg = Development
+		{E5F6F626-C440-47B4-A962-1AAF5136F722}.Development|Any CPU.Build.0 = Development
+		{E5F6F626-C440-47B4-A962-1AAF5136F722}.Release|Any CPU.ActiveCfg = Development
+		{E5F6F626-C440-47B4-A962-1AAF5136F722}.Release|Any CPU.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[LUT_SUSTAINER] (
+    [ID]               NVARCHAR (50)  NOT NULL,
+    [NAME]             NVARCHAR (99) NULL,
+    [NAME_LONG]        NVARCHAR (99) NULL,
+    [DESCRIPTION]      NVARCHAR (254) NULL,
+    [MODIFY_TIMESTAMP] NVARCHAR (20)  NULL
+);
+

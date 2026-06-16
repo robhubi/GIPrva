@@ -1,0 +1,1282 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/13/2019 10:40:36 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ROBERT-PC03"
+  DTS:CreatorName="ROBERT-PC03\Robert"
+  DTS:Description="DTS Wizard-generated package"
+  DTS:DTSID="{7674CFBF-D255-45C7-BEF4-0F2A865AD6BB}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="1031"
+  DTS:MaxErrorCount="0"
+  DTS:ObjectName="SSIS_LinkUse"
+  DTS:ProtectionLevel="2"
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{7195F8E9-355C-4AFF-BB76-1C2B46D11E6A}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File ConMngr LinkUse]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{AE0FA9FB-EFA7-4F34-BAFB-343AE99D6023}"
+      DTS:ObjectName="Flat File ConMngr LinkUse">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowsToSkip="4"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="65001"
+          DTS:ConnectionString="G:\LinkUse.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{2744305B-8ACA-4E16-90E6-7C91A0B6AF9A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USE_ID"
+              DTS:DTSID="{E7322904-8842-4BCC-9F99-044CFF75EBD9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LINK_ID"
+              DTS:DTSID="{0AA9B75F-3564-46DF-951B-A52029CED3D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 3"
+              DTS:DTSID="{D85DF151-5993-4856-BD78-9A6F0DDF9D43}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OFFSET"
+              DTS:DTSID="{55C9BF1C-E307-4AC2-A0CA-850E2DE5802F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 5"
+              DTS:DTSID="{CC0E5755-A656-41DB-8BC2-1B89705EFE3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 6"
+              DTS:DTSID="{FC62FA26-AC48-4EF8-81C7-D9DB8308AE99}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="FROM_PERCENT"
+              DTS:DTSID="{0EE1BFC0-3CC1-41C3-AD21-A3C319A7CDFC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TO_PERCENT"
+              DTS:DTSID="{03E2D4B6-6DA6-45F4-8624-BCFF8CF43E1E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="BASETYPE"
+              DTS:DTSID="{BDF512DF-91FE-449A-A741-289F1021E71F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USE_ACCESS_TOW"
+              DTS:DTSID="{342F71FE-10CC-4826-9FE7-38E015982318}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="14"
+              DTS:TextQualified="True"
+              DTS:ObjectName="USE_ACCESS_BKW"
+              DTS:DTSID="{CDC9FEC5-9224-43FB-9F14-9ACAF63CF600}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 12"
+              DTS:DTSID="{6671A06B-1559-470A-8337-8315E9C1D6FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 13"
+              DTS:DTSID="{63AC8032-2486-4840-BCC7-F4CC32DB0CAC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="20"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 14"
+              DTS:DTSID="{E5DF0E5E-F126-401A-9822-4845B7D5B410}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x003B_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 15"
+              DTS:DTSID="{90B04367-2BE4-4847-82B5-F76BE3267E22}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 16"
+              DTS:DTSID="{D745ED9F-C92E-4066-8E9F-7E71A904BCC3}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Import LinkUse Data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:DTSID="{88A899C7-C93C-4534-AE63-F164445AD178}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:FailPackageOnFailure="True"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Import LinkUse Data"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          defaultBufferSize="3145728"
+          version="1">
+          <components>
+            <component
+              refId="Package\Import LinkUse Data\Quelle - LinkUse_txt"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flatfilequelle;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;1"
+              description="Flatfilequelle"
+              localeId="1033"
+              name="Quelle - LinkUse_txt"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Gibt an, ob Spalten mit der Länge &quot;0&quot; als NULL behandelt werden."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen der Ausgabespalte an, die den Dateinamen enthält. Wenn kein Name angegeben wird, wird keine Ausgabespalte generiert, die den Dateinamen enthält."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File ConMngr LinkUse]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File ConMngr LinkUse]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle]"
+                  name="Ausgabe der Flatfilequelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[LINK_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[LINK_ID]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[LINK_ID]"
+                      name="LINK_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[USE_ID]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ID]"
+                      name="USE_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[OFFSET]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[OFFSET]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[OFFSET]"
+                      name="OFFSET"
+                      scale="1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[FROM_PERCENT]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[FROM_PERCENT]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[FROM_PERCENT]"
+                      name="FROM_PERCENT"
+                      scale="4"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[TO_PERCENT]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[TO_PERCENT]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[TO_PERCENT]"
+                      name="TO_PERCENT"
+                      scale="4"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BASETYPE]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[BASETYPE]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BASETYPE]"
+                      name="BASETYPE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_TOW]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[USE_ACCESS_TOW]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_TOW]"
+                      name="USE_ACCESS_TOW"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_BKW]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Konvertierung"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[USE_ACCESS_BKW]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_BKW]"
+                      name="USE_ACCESS_BKW"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Zeigt an, ob die Spalte die schnelleren gebietsschemaneutralen Analyseroutinen verwendet."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Gibt an, ob die Daten im Binärformat sind."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[LINK_ID]"
+                      dataType="i4"
+                      name="LINK_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 0]"
+                      codePage="65001"
+                      dataType="str"
+                      length="3"
+                      name="Column 0" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[USE_ID]"
+                      dataType="i4"
+                      name="USE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 3]"
+                      codePage="65001"
+                      dataType="str"
+                      length="255"
+                      name="Column 3" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[OFFSET]"
+                      dataType="decimal"
+                      name="OFFSET" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 5]"
+                      dataType="r4"
+                      name="Column 5" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 6]"
+                      dataType="r4"
+                      name="Column 6" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[FROM_PERCENT]"
+                      dataType="decimal"
+                      name="FROM_PERCENT" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[TO_PERCENT]"
+                      dataType="decimal"
+                      name="TO_PERCENT" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[BASETYPE]"
+                      dataType="decimal"
+                      name="BASETYPE" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[USE_ACCESS_TOW]"
+                      dataType="decimal"
+                      name="USE_ACCESS_TOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[USE_ACCESS_BKW]"
+                      dataType="decimal"
+                      name="USE_ACCESS_BKW" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 12]"
+                      codePage="65001"
+                      dataType="str"
+                      length="1"
+                      name="Column 12" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 13]"
+                      dataType="i8"
+                      name="Column 13" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 14]"
+                      dataType="i8"
+                      name="Column 14" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 15]"
+                      dataType="i1"
+                      name="Column 15" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].ExternalColumns[Column 16]"
+                      dataType="i1"
+                      name="Column 16" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Fehlerausgabe der Flatfilequelle]"
+                  isErrorOut="true"
+                  name="Fehlerausgabe der Flatfilequelle">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[Fehlerausgabespalte der Flatfilequelle]"
+                      codePage="65001"
+                      dataType="text"
+                      description="Fehlerausgabespalte der Flatfilequelle"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[Fehlerausgabespalte der Flatfilequelle]"
+                      name="Fehlerausgabespalte der Flatfilequelle" />
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Fehlerausgabe der Flatfilequelle].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
+              description="OLE DB-Ziel"
+              name="Ziel - LinkUse Bulk Insert"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[LinkUse]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadMaxInsertCommitSize">10000</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Connections[OleDbConnection]"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input]"
+                  errorOrTruncationOperation="Einfügen"
+                  errorRowDisposition="RedirectRow"
+                  hasSideEffects="true"
+                  name="Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].Columns[LINK_ID]"
+                      cachedDataType="i4"
+                      cachedName="LINK_ID"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[LINK_ID]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[LINK_ID]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].Columns[USE_ID]"
+                      cachedDataType="i4"
+                      cachedName="USE_ID"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[USE_ID]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ID]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].Columns[OFFSET]"
+                      cachedDataType="decimal"
+                      cachedName="OFFSET"
+                      cachedScale="1"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[OFFSET]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[OFFSET]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].Columns[FROM_PERCENT]"
+                      cachedDataType="decimal"
+                      cachedName="FROM_PERCENT"
+                      cachedScale="4"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[FROM_PERCENT]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[FROM_PERCENT]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].Columns[TO_PERCENT]"
+                      cachedDataType="decimal"
+                      cachedName="TO_PERCENT"
+                      cachedScale="4"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[TO_PERCENT]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[TO_PERCENT]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].Columns[BASETYPE]"
+                      cachedDataType="decimal"
+                      cachedName="BASETYPE"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[BASETYPE]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BASETYPE]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].Columns[USE_ACCESS_TOW]"
+                      cachedDataType="decimal"
+                      cachedName="USE_ACCESS_TOW"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[USE_ACCESS_TOW]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_TOW]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].Columns[USE_ACCESS_BKW]"
+                      cachedDataType="decimal"
+                      cachedName="USE_ACCESS_BKW"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[USE_ACCESS_BKW]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_BKW]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[LINK_ID]"
+                      dataType="i4"
+                      name="LINK_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[USE_ID]"
+                      dataType="i4"
+                      name="USE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[OFFSET]"
+                      dataType="numeric"
+                      name="OFFSET"
+                      precision="4"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[FROM_PERCENT]"
+                      dataType="numeric"
+                      name="FROM_PERCENT"
+                      precision="7"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[TO_PERCENT]"
+                      dataType="numeric"
+                      name="TO_PERCENT"
+                      precision="7"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[BASETYPE]"
+                      dataType="i4"
+                      name="BASETYPE" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[USE_ACCESS_TOW]"
+                      dataType="i4"
+                      name="USE_ACCESS_TOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input].ExternalColumns[USE_ACCESS_BKW]"
+                      dataType="i4"
+                      name="USE_ACCESS_BKW" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Ziels"
+                  synchronousInputId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
+              description="OLE DB-Ziel"
+              name="Ziel - LinkUse Row by Row Insert"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[LinkUse]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadMaxInsertCommitSize">10000</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Connections[OleDbConnection]"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input]"
+                  errorOrTruncationOperation="Einfügen"
+                  errorRowDisposition="RedirectRow"
+                  hasSideEffects="true"
+                  name="Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].Columns[LINK_ID]"
+                      cachedDataType="i4"
+                      cachedName="LINK_ID"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[LINK_ID]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[LINK_ID]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].Columns[USE_ID]"
+                      cachedDataType="i4"
+                      cachedName="USE_ID"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[USE_ID]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ID]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].Columns[OFFSET]"
+                      cachedDataType="decimal"
+                      cachedName="OFFSET"
+                      cachedScale="1"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[OFFSET]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[OFFSET]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].Columns[FROM_PERCENT]"
+                      cachedDataType="decimal"
+                      cachedName="FROM_PERCENT"
+                      cachedScale="4"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[FROM_PERCENT]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[FROM_PERCENT]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].Columns[TO_PERCENT]"
+                      cachedDataType="decimal"
+                      cachedName="TO_PERCENT"
+                      cachedScale="4"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[TO_PERCENT]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[TO_PERCENT]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].Columns[BASETYPE]"
+                      cachedDataType="decimal"
+                      cachedName="BASETYPE"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[BASETYPE]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BASETYPE]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].Columns[USE_ACCESS_TOW]"
+                      cachedDataType="decimal"
+                      cachedName="USE_ACCESS_TOW"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[USE_ACCESS_TOW]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_TOW]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].Columns[USE_ACCESS_BKW]"
+                      cachedDataType="decimal"
+                      cachedName="USE_ACCESS_BKW"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[USE_ACCESS_BKW]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_BKW]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[LINK_ID]"
+                      dataType="i4"
+                      name="LINK_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[USE_ID]"
+                      dataType="i4"
+                      name="USE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[OFFSET]"
+                      dataType="numeric"
+                      name="OFFSET"
+                      precision="4"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[FROM_PERCENT]"
+                      dataType="numeric"
+                      name="FROM_PERCENT"
+                      precision="7"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[TO_PERCENT]"
+                      dataType="numeric"
+                      name="TO_PERCENT"
+                      precision="7"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[BASETYPE]"
+                      dataType="i4"
+                      name="BASETYPE" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[USE_ACCESS_TOW]"
+                      dataType="i4"
+                      name="USE_ACCESS_TOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input].ExternalColumns[USE_ACCESS_BKW]"
+                      dataType="i4"
+                      name="USE_ACCESS_BKW" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Ziels"
+                  synchronousInputId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB-Ziel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Alle Rechte vorbehalten; http://www.microsoft.com/sql/support;4"
+              description="OLE DB-Ziel"
+              name="Ziel - LinkUse_ImpError Write to Error Table"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Die Anzahl der Sekunden für das Timeout eines Befehls. Der Wert &quot;0&quot; zeigt einen unendlichen Timeoutwert an."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts an."
+                  name="OpenRowset">[dbo].[LinkUse_ImpError]</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die Variable an, die den Namen des zum Öffnen eines Rowsets verwendeten Datenbankobjekts enthält."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Der auszuführende SQL-Befehl."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt die zu verwendende Spaltencodepage an, wenn keine Codepageinformationen von der Datenquelle verfügbar sind."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Erzwingt die Verwendung des DefaultCodePage-Eigenschaftswerts beim Beschreiben von Zeichendaten."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt den zum Zugreifen auf die Datenbank verwendeten Modus an."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob die für Identitätsspalten übergebenen Werte zum Ziel kopiert werden. Bei &quot;False&quot; werden die Werte für Identitätsspalten am Ziel automatisch generiert. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Zeigt an, ob für Spalten, die NULL enthalten, NULL am Ziel eingefügt wird. Bei &quot;False&quot; werden für Spalten, die NULL enthalten, am Ziel die Standardwerte eingefügt. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Gibt die für die Option &quot;Schnelles Laden&quot; zu verwendenden Optionen an. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Gibt an, wann beim Einfügen von Daten Commits ausgegeben werden. Der Wert &quot;0&quot; gibt an, dass ein Commit am Ende des Einfügens von Daten ausgegeben wird. Trifft nur zu, wenn die Option &quot;Schnelles Laden&quot; aktiviert ist."
+                  name="FastLoadMaxInsertCommitSize">10000</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Connections[OleDbConnection]"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input]"
+                  errorOrTruncationOperation="Einfügen"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].Columns[LINK_ID]"
+                      cachedDataType="i4"
+                      cachedName="LINK_ID"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[LINK_ID]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[LINK_ID]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].Columns[USE_ID]"
+                      cachedDataType="i4"
+                      cachedName="USE_ID"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[USE_ID]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ID]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].Columns[OFFSET]"
+                      cachedDataType="decimal"
+                      cachedName="OFFSET"
+                      cachedScale="1"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[OFFSET]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[OFFSET]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].Columns[FROM_PERCENT]"
+                      cachedDataType="decimal"
+                      cachedName="FROM_PERCENT"
+                      cachedScale="4"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[FROM_PERCENT]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[FROM_PERCENT]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].Columns[TO_PERCENT]"
+                      cachedDataType="decimal"
+                      cachedName="TO_PERCENT"
+                      cachedScale="4"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[TO_PERCENT]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[TO_PERCENT]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].Columns[BASETYPE]"
+                      cachedDataType="decimal"
+                      cachedName="BASETYPE"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[BASETYPE]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[BASETYPE]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].Columns[USE_ACCESS_TOW]"
+                      cachedDataType="decimal"
+                      cachedName="USE_ACCESS_TOW"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[USE_ACCESS_TOW]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_TOW]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].Columns[USE_ACCESS_BKW]"
+                      cachedDataType="decimal"
+                      cachedName="USE_ACCESS_BKW"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[USE_ACCESS_BKW]"
+                      lineageId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle].Columns[USE_ACCESS_BKW]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].Columns[ErrorCode]"
+                      cachedDataType="i4"
+                      cachedName="ErrorCode"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[ErrorCode]"
+                      lineageId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]" />
+                    <inputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].Columns[ErrorColumn]"
+                      cachedDataType="i4"
+                      cachedName="ErrorColumn"
+                      externalMetadataColumnId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[ErrorColumn]"
+                      lineageId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[LINK_ID]"
+                      dataType="i4"
+                      name="LINK_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[USE_ID]"
+                      dataType="i4"
+                      name="USE_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[OFFSET]"
+                      dataType="numeric"
+                      name="OFFSET"
+                      precision="4"
+                      scale="1" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[FROM_PERCENT]"
+                      dataType="numeric"
+                      name="FROM_PERCENT"
+                      precision="7"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[TO_PERCENT]"
+                      dataType="numeric"
+                      name="TO_PERCENT"
+                      precision="7"
+                      scale="4" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[BASETYPE]"
+                      dataType="i4"
+                      name="BASETYPE" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[USE_ACCESS_TOW]"
+                      dataType="i4"
+                      name="USE_ACCESS_TOW" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[USE_ACCESS_BKW]"
+                      dataType="i4"
+                      name="USE_ACCESS_BKW" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[ErrorCode]"
+                      dataType="i4"
+                      name="ErrorCode" />
+                    <externalMetadataColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input].ExternalColumns[ErrorColumn]"
+                      dataType="i4"
+                      name="ErrorColumn" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Fehlerausgabe des OLE DB-Ziels"
+                  synchronousInputId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Outputs[Fehlerausgabe des OLE DB-Ziels].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Import LinkUse Data.Paths[Ausgabe der Flatfilequelle]"
+              endId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Inputs[Destination Input]"
+              name="Ausgabe der Flatfilequelle"
+              startId="Package\Import LinkUse Data\Quelle - LinkUse_txt.Outputs[Ausgabe der Flatfilequelle]" />
+            <path
+              refId="Package\Import LinkUse Data.Paths[Fehlerausgabe des OLE DB-Ziels]"
+              endId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Inputs[Destination Input]"
+              name="Fehlerausgabe des OLE DB-Ziels"
+              startId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]" />
+            <path
+              refId="Package\Import LinkUse Data.Paths[Fehlerausgabe des OLE DB-Ziels1]"
+              endId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Inputs[Destination Input]"
+              name="Fehlerausgabe des OLE DB-Ziels"
+              startId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Outputs[Fehlerausgabe des OLE DB-Ziels]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql12">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Import LinkUse Data"
+          TopLeft="5.5,5.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Import LinkUse Data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="289,42"
+          Id="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table"
+          TopLeft="343,248" />
+        <NodeLayout
+          Size="199,42"
+          Id="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert"
+          TopLeft="12,109.5" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Import LinkUse Data\Quelle - LinkUse_txt"
+          TopLeft="16.5,14.5" />
+        <NodeLayout
+          Size="237,42"
+          Id="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert"
+          TopLeft="370,148" />
+        <EdgeLayout
+          Id="Package\Import LinkUse Data.Paths[Fehlerausgabe des OLE DB-Ziels1]"
+          TopLeft="488,190">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,58"
+              Start="0,0"
+              End="0,50.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-71.817578125,19.41845703125,143.63515625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import LinkUse Data.Paths[Fehlerausgabe des OLE DB-Ziels]"
+          TopLeft="211,130.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="159,38.5"
+              Start="0,0"
+              End="151.5,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="75.5,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="75.5,0"
+                    Point2="79.5,0"
+                    Point3="79.5,4" />
+                  <mssgle:LineSegment
+                    End="79.5,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="79.5,34.5"
+                    Point2="79.5,38.5"
+                    Point3="83.5,38.5" />
+                  <mssgle:LineSegment
+                    End="151.5,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="7.68242187500002,-17.6630859375,143.63515625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Import LinkUse Data.Paths[Ausgabe der Flatfilequelle]"
+          TopLeft="108,56.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,53"
+              Start="0,0"
+              End="0,45.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
