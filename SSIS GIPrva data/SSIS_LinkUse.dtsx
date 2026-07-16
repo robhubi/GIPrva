@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="7/13/2019 10:40:36 PM"
@@ -12,9 +12,9 @@
   DTS:LocaleID="1031"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="SSIS_LinkUse"
-  DTS:ProtectionLevel="2"
-  DTS:VersionBuild="26"
-  DTS:VersionGUID="{7195F8E9-355C-4AFF-BB76-1C2B46D11E6A}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{4ACA9AFA-FE25-40DF-BAEB-8CE359B5BEE8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -555,8 +555,8 @@
               <connections>
                 <connection
                   refId="Package\Import LinkUse Data\Ziel - LinkUse Bulk Insert.Connections[OleDbConnection]"
-                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
-                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -747,8 +747,8 @@
               <connections>
                 <connection
                   refId="Package\Import LinkUse Data\Ziel - LinkUse Row by Row Insert.Connections[OleDbConnection]"
-                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
-                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -939,8 +939,8 @@
               <connections>
                 <connection
                   refId="Package\Import LinkUse Data\Ziel - LinkUse_ImpError Write to Error Table.Connections[OleDbConnection]"
-                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
-                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>

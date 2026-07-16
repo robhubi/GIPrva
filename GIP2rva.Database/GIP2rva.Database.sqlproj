@@ -84,6 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="GIP2rva.Database.publish.xml" />
+    <None Include="GIP2rva.DB.WinAuth.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="PostD_Scripts\Script.PostDeployment1.sql" />

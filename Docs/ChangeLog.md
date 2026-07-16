@@ -2,9 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-
-
 #
+
+## [X.X.X] - 2026-07-XX
+
+### Changed
+- From Server Authentication to Windows Authentication
+- From Protection Level „EncryptSensitiveWithPassword" to "DontSaveSensitive"
 
 ## [0.3.0] - 2026-06-07
 Solution "Import GIP RVA" completly refactored. 

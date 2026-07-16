@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="7/28/2019 10:16:59 PM"
@@ -11,9 +11,9 @@
   DTS:LocaleID="1031"
   DTS:ObjectName="SSIS_Node"
   DTS:PackageType="5"
-  DTS:ProtectionLevel="2"
-  DTS:VersionBuild="30"
-  DTS:VersionGUID="{7DC35ED3-1A6A-4C2A-90B5-8170F0B974DC}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{F44328F1-AA00-4C11-8F4F-971F1D957E67}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -423,8 +423,8 @@
               <connections>
                 <connection
                   refId="Package\Import_Node_Data\Ziel_Node Bulk Insert.Connections[OleDbConnection]"
-                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
-                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -575,8 +575,8 @@
               <connections>
                 <connection
                   refId="Package\Import_Node_Data\Ziel_Node Row by Row Insert.Connections[OleDbConnection]"
-                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
-                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -727,8 +727,8 @@
               <connections>
                 <connection
                   refId="Package\Import_Node_Data\Ziel_Node Write to Error Table.Connections[OleDbConnection]"
-                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
-                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>

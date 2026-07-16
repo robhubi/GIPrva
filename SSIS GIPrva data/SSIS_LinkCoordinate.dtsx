@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="8/2/2019 9:50:47 PM"
@@ -11,9 +11,9 @@
   DTS:LocaleID="1031"
   DTS:ObjectName="SSIS_LinkCoordinate"
   DTS:PackageType="5"
-  DTS:ProtectionLevel="2"
-  DTS:VersionBuild="15"
-  DTS:VersionGUID="{AD40ED61-183F-466B-B351-3938ACEA9BA0}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{F5DE1181-B906-436A-ADA3-5CE3FC590BD6}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -383,8 +383,8 @@
               <connections>
                 <connection
                   refId="Package\Import LinkCoordinate Data\Ziel_LinkCoordinate Bulk Insert.Connections[OleDbConnection]"
-                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
-                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -545,8 +545,8 @@
               <connections>
                 <connection
                   refId="Package\Import LinkCoordinate Data\Ziel_LinkCoordinate Row by Row Insert.Connections[OleDbConnection]"
-                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
-                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -707,8 +707,8 @@
               <connections>
                 <connection
                   refId="Package\Import LinkCoordinate Data\Ziel_LinkCoordinate_ImpError Row by Row Insert.Connections[OleDbConnection]"
-                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
-                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>

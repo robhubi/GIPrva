@@ -21,8 +21,9 @@ Git repository URL: https://github.com/robhubi/GIPrva.git <br/>
 Solution File: "GIP2rva.sln"
 
 ### Check Settings
-GIP2rva.Database/Properties/Debug: "Always re-create database" = YES <br/>
-SSIS GIPrva data/Properties/Configuration Properties: TargetServerVersion = \<*Your SQL Server Version*>
+* GIP2rva.Database/Properties/Debug: "Always re-create database" = YES
+* SSIS GIPrva data/Properties/Configuration Properties: TargetServerVersion = \<*Your SQL Server Version*>
+* Log on to the SQL Server: Windows Authentication
 
 ### Create Database
 - Publish GIP2rva.Database
@@ -44,5 +45,6 @@ The values are accessible via the connection managers of the SSIS packages:
 
 ### Import data
 
-1. in VS: open solution "GIP2rva". Enter the password to decrypt the sensitive data. 
-2. right click on SSIS package "SSIS_MASTER.dtsx" - Execute Package
+1. in VS: open solution "GIP2rva".
+2. Publish "GIP2rva.Database"
+3. right click on SSIS package "SSIS_MASTER.dtsx" - Execute Package

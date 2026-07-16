@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="7/13/2019 10:40:36 PM"
@@ -12,9 +12,9 @@
   DTS:LocaleID="1031"
   DTS:MaxErrorCount="0"
   DTS:ObjectName="SSIS_Link"
-  DTS:ProtectionLevel="2"
-  DTS:VersionBuild="22"
-  DTS:VersionGUID="{A5D9EB5D-36DB-4E05-9397-8656A211DA45}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{5B73657F-BEE0-4C17-A18D-3014F3AACD86}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -28,16 +28,9 @@
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=TummiSS;User ID=GIPadmin;Initial Catalog=GIPrva;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=false;">
-          <EncryptedData
-            Type="http://www.w3.org/2001/04/xmlenc#Element"
-            Salt="zPTsB54DRg=="
-            IV="oN0H3WNbmbA=" xmlns="http://www.w3.org/2001/04/xmlenc#">
-            <EncryptionMethod
-              Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
-            <CipherData>
-              <CipherValue>oN0H3WNbmbB9sBWqGRI5IOnN52IWZttx18sNPnWDiMyyLONp1+9v8NX83cT7LPdAGl8MiOlLwdFVWfS1aQTtbKXuf6TB3JbCxFBgEEl29MeZiy1FvBitxFv9geMti6ozYcnlLPfBBo9mWd6CMWT+vf/3lGmCnPgbcYmjumuG8HE=</CipherValue>
-            </CipherData>
-          </EncryptedData>
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"></DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1154,8 +1147,8 @@
               <connections>
                 <connection
                   refId="Package\Import Link Data\Ziel - Link Bulk Insert.Connections[OleDbConnection]"
-                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
-                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -1389,8 +1382,8 @@
               <connections>
                 <connection
                   refId="Package\Import Link Data\Ziel - Link Row by Row Insert.Connections[OleDbConnection]"
-                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
-                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
@@ -1624,8 +1617,8 @@
               <connections>
                 <connection
                   refId="Package\Import Link Data\Ziel - Link_ImpError write to Error Table.Connections[OleDbConnection]"
-                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
-                  connectionManagerRefId="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:invalid"
+                  connectionManagerID="{F5BC2465-CEF2-42C7-8AE9-D8872CAFE741}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[TummiSS.GIPrva.GIPadmin]"
                   description="Die für den Zugriff auf die Datenbank verwendete OLE DB-Laufzeitverbindung."
                   name="OleDbConnection" />
               </connections>
